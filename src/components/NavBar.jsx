@@ -6,12 +6,14 @@ const NavBar = () => {
   return (
     <>
     
-      <nav className="navbar navbar-expand-lg bg-body-tertiary">
-        <div className="container-fluid">
-          <a className="navbar-brand" href="#">
-            React E-commerce
+      <nav className="navbar navbar-dark navbar-expand-lg">
+        <div className="container-fluid ">
+          <div>
+          <a className="navbar-link" href="#">
+            Shoes Market - 
           </a>
           <CartWidget/>
+          </div>
           <button
             className="navbar-toggler"
             type="button"
@@ -25,10 +27,10 @@ const NavBar = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0" style={{alignItems: "center"}} >
-              <li><a className="nav-link active" href="#"> Home</a></li>
-              <li><a className="nav-link" href="#"> Nosotros</a></li>
-              <li><a className="nav-link" href="#"> Productos</a></li>
-              <li><a className="nav-link" href="#"> Contacto</a></li>
+              <li><a className="navbar-link" href="#"> Home</a></li>
+              <li><a className="navbar-link" href="#"> Nosotros</a></li>
+              <li><a className="navbar-link" href="#"> Productos</a></li>
+              <li><a className="navbar-link" href="#"> Contacto</a></li>
             </ul>
           </div>
         </div>

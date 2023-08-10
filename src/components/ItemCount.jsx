@@ -22,7 +22,7 @@ const ItemCount = ({ stock, initial, onAdd }) => {
         <span className="count">{count}</span>
         <button onClick={handleSum}>+</button>
         <button onClick={onAdd} className="btn btn-outline-primary">
-          Agregar al carrito
+          Ver detalles
         </button>
       </div>
     </div>

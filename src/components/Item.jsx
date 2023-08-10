@@ -1,30 +1,28 @@
 import React from "react";
 import ItemCount from "./ItemCount";
 
-const Item = () => {
+const Item = ({item}) => {
 
   const onAdd = () => {
     console.log("Add to cart");
   }
 
   return (
-    <div className="container">
       <div className="row">
         <div className="column">
           <div className="card m-2">
             <div className="card-body">
-              <h5 className="card-title">Primer Producto</h5>
+              <h5 className="card-title">{item.name}</h5>
               <p className="card-text">
-                With supporting text below as a natural lead-in to additional
-                content.
+                {item.description}
               </p>
+              <img src={item.pictureUrl}/>
               <div className="item-content">
-                <h3>$100</h3>
+                <h3>${item.price}</h3>
                 <ItemCount stock={5} initial={1} onAdd={onAdd}/> 
               </div>
             </div>
-          </div>
-        </div>
+          </div> 
         {/* <div className="column">
           <div className="card m-2">
             <div className="card-body">

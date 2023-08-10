@@ -4,13 +4,13 @@ import Item from "./Item";
 const ItemList = ({ productos }) => {
   return (
     <>
-      {productos.length > 0 && (
-        <div className="container">
-          {productos.map((item, index) => {
-            return <Item item={item} key={index} />;
-          })}
-        </div>
-      )}
+    <div className="container">
+      <div className="row">
+      {productos.map((item, index) => {
+        return <Item item={item} key={index} />;
+      })}
+      </div>
+      </div>
     </>
   );
 };

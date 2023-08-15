@@ -1,20 +1,30 @@
 [
   {
     "id": 1,
-    "title": "iPhone 9",
-    "description": "An apple mobile which is nothing like apple",
-    "price": 449
+    "name": "Zapatillas 1",
+    "description": "Zapatillas Nike Talle 42",
+    "price": 54000,
+    "stock": 3
   },
   {
     "id": 2,
-    "title": "iPhone 11",
-    "description": "An apple mobile which is nothing like apple",
-    "price": 549
+    "name": "Zapatillas 2",
+    "description": "Zapatillas Adidas Talle 42",
+    "price": 49500,
+    "stock": 5
   },
   {
     "id": 3,
-    "title": "iPhone 12",
-    "description": "An apple mobile which is nothing like apple",
-    "price": 679
+    "name": "Zapatillas 3",
+    "description": "Zapatillas Topper Talle 42",
+    "price": 52500,
+    "stock": 4
+  },
+  {
+    "id": 4,
+    "name": "Zapatillas 4",
+    "description": "Zapatillas Puma Talle 42",
+    "price": 38999,
+    "stock": 5
   }
 ]

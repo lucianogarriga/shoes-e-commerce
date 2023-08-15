@@ -2,8 +2,9 @@ import React from "react";
 import ItemCount from "./ItemCount";
 
 const Item = ({ item }) => {
-  const onAdd = () => {
-    console.log("View details");
+
+  const onAdd = (count) => {
+    console.log(`Compraste ${count} unidades!`);
   };
 
   return (

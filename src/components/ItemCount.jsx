@@ -1,27 +1,27 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const ItemCount = ({ stock, initial, onAdd }) => {
   const [count, setCount] = useState(initial);
 
   const handleSub = () => {
-    {
-      count > initial && setCount(count - 1);
-    }
+    setCount(count - 1); 
   };
 
   const handleSum = () => {
-    {
-      count < stock && setCount(parseInt(count + 1));
-    }
+    setCount(count + 1);
   };
+
+  useEffect(() => { 
+    setCount(parseInt(initial))
+  }, [initial]);
 
   return (
     <div>
       <div>
-        <button onClick={handleSub}>-</button>
+        <button disabled={count < initial} onClick={handleSub}>-</button>
         <span className="count">{count}</span>
-        <button onClick={handleSum}>+</button>
-        <button onClick={onAdd} className="btn btn-outline-primary">
+        <button disabled={count >= stock}onClick={handleSum}>+</button>
+        <button disabled={count === 0 && count < stock} onClick={() => onAdd(count)} className="btn btn-outline-primary">
           Ver detalles
         </button>
       </div>

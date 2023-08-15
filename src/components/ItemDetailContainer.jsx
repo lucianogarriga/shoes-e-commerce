@@ -2,20 +2,19 @@ import React, { useEffect, useState } from "react";
 import {pedirProductosPorID} from "../helpers/pedirProductos"; 
 import ItemDetail from "./ItemDetail";
   
-const ItemDetailContainer = ({itemId}) => {
+// const ItemDetailContainer = ({itemId}) => {
+const ItemDetailContainer = () => {
+ 
+  const getItems = async() => {
+    const myPromise = await new Promise((resolve, rejected) => {
 
-  const [item, setItem] = useState(null);
-
-  useEffect(() => {
-    pedirProductosPorID(itemId)
-        .then((res) => {
-          setItem(res);
-        });
-  }, [itemId]);
+    })
+  }
 
   return (
     <div>
-      {item && <ItemDetail item={item}/>}
+      {/* {item && <ItemDetail item={item}/>} */}
+      {/* <ItemDetail item={item}/> */}
     </div>
   );
 };

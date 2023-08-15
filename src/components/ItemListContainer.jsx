@@ -1,31 +1,29 @@
 import React, { useEffect, useState } from 'react';
+import productos from '../data/products.json';
 import ItemList from './ItemList';
 
 const ItemListContainer = () => {
-
-    let productos = [
-        { id: 1, name: "Zapatillas 1", description: "Zapatillas Nike Talle 42", price: 54000,stock: 3 },
-        { id: 2, name: "Zapatillas 2", description: "Zapatillas Adidas Talle 42", price: 49500,stock: 5 },
-        { id: 3, name: "Zapatillas 3", description: "Zapatillas Topper Talle 42", price: 52500, stock: 4 },
-        { id: 4, name: "Zapatillas 4", description: "Zapatillas Puma Talle 42", price: 38999,stock: 5 }
-      ];
-
+ 
     const [data, setData] = useState([]);
     const [loading, setLoading] = useState(true)
 
     useEffect(()=> {
        const getData = new Promise((resolve,reject) => {
         setTimeout(()=> {
+            setLoading(false)
             resolve(productos)
         },2000)
        })
-       getData.then(resolve => setData(resolve))
+       getData
+       .then(resolve => setData(resolve))
     },[])
 
     return (
         <>
             <h1 className='list-title'>Listado de productos</h1>
-            
+            <p className='loading-text'>
+            {loading ? "Cargando lista de productos..." : null}
+            </p>
             <ItemList data={data}/>
         </>
     );

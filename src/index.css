@@ -50,7 +50,9 @@ body{
 .count {
   margin: 10px;
 }
-
+.loading-text{
+  text-align: center;
+}
 button {
   border-radius: 8px;
   border: 1px solid transparent;

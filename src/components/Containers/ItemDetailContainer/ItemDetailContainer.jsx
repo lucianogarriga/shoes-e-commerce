@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react"; 
 import ItemDetail from "../../Pure/ItemDetail/ItemDetail";
-import styles from "../../../index.css";
+import "../../../index.css";
    
 const zapatilla = {
     id: 1,
@@ -21,11 +21,10 @@ const ItemDetailContainer = () => {
         setTimeout(() => {
           // Al resolverse, debe traer el objeto
           resolve(zapatilla)
-        },2000)
+        },1000)
     });
     getData.then((res) => {
-      setData(res)
-      console.log(res);
+      setData(res) 
     })
   },[])
   
@@ -33,7 +32,7 @@ const ItemDetailContainer = () => {
     <div> 
     {/* Tomamos la data del objeto guardado en el estado,
      y lo pasamos al ItemDetail */}
-      <ItemDetail data={data}/>
+     <ItemDetail data={data}/>
     </div>
   );
 };

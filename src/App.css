@@ -4,3 +4,15 @@
     box-sizing: border-box;
 }
  
+
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+
+body{
+  margin: 0 auto;
+  max-width: 80em;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  background-color: rgb(36, 36, 36);
+  color: rgb(207, 207, 207);
+  line-height: 1.5;
+  padding: 1em;
+}

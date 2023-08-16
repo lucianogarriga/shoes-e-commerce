@@ -1,16 +1,4 @@
-@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
-
-
-body{
-  margin: 0 auto;
-  max-width: 80em;
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-  background-color: rgb(36, 36, 36);
-  color: rgb(207, 207, 207);
-  line-height: 1.5;
-  padding: 1em;
-}
-
+ 
 /* Navbar */
 .navbar-link{
   text-decoration: none;
@@ -39,29 +27,7 @@ body{
   justify-content: center;
 }
 
-/* ItemDetail */
 
-.container{
-  width: 98%;
-  margin: auto;
-  border: 1px solid tomato;
-}
-
-@media screen and (min-width: 768px) {
-  .container{
-    width: 70%;
-  }
-}
-
-.product-detail{
-  margin: 3rem 0.5rem;
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-}
-.content{
-  width: 100%;
-}
 /*  */
 
 

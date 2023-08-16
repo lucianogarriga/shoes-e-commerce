@@ -1,10 +1,6 @@
 @import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 body{
   margin: 0 auto;
   max-width: 80em;
@@ -14,12 +10,16 @@ body{
   line-height: 1.5;
   padding: 1em;
 }
+
+/* Navbar */
 .navbar-link{
   text-decoration: none;
   color: rgba(99, 149, 224, 0.822);
   font-size: 1em; 
   margin-left: 10px;
 }  
+
+
 .list-title{
   margin: 1em; 
   text-align: center;
@@ -38,15 +38,40 @@ body{
   align-items: center;
   justify-content: center;
 }
+
+/* ItemDetail */
+
+.container{
+  width: 98%;
+  margin: auto;
+  border: 1px solid tomato;
+}
+
+@media screen and (min-width: 768px) {
+  .container{
+    width: 70%;
+  }
+}
+
+.product-detail{
+  margin: 3rem 0.5rem;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.content{
+  width: 100%;
+}
+/*  */
+
+
 .item-content{  
   text-align: center;
 }
-
 .card {
   width: auto;
   margin: auto auto; 
 }
-
 .count {
   margin: 10px;
 }

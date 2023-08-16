@@ -1,7 +1,7 @@
 import React from "react";
-import Item from "./Item";
+import Item from "../Item/Item";
 
-const ItemList = ({ data }) => {
+const ItemList = ({ data = []}) => {
   return (
     <>
     <div className="container">

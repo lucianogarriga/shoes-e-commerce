@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import productos from '../data/products.json';
-import ItemList from './ItemList';
+import productos from '../../../data/products.json';
+import ItemList from '../../Pure/ItemList/ItemList'
 
 const ItemListContainer = () => {
  
@@ -15,7 +15,10 @@ const ItemListContainer = () => {
         },2000)
        })
        getData
-       .then(resolve => setData(resolve))
+       .then(resolve => {
+        setData(resolve);
+        console.log(resolve)
+       }) 
     },[])
 
     return (

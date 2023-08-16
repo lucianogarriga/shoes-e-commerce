@@ -18,9 +18,9 @@ const ItemCount = ({ stock, initial, onAdd }) => {
   return (
     <div>
       <div>
-        <button disabled={count < initial} onClick={handleSub}>-</button>
+        {/* <button disabled={count < initial} onClick={handleSub}>-</button>
         <span className="count">{count}</span>
-        <button disabled={count >= stock}onClick={handleSum}>+</button>
+        <button disabled={count >= stock}onClick={handleSum}>+</button> */}
         <button disabled={count === 0 && count < stock} onClick={() => onAdd(count)} className="btn btn-outline-primary">
           Ver detalles
         </button>

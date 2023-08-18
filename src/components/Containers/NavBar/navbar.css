@@ -1,0 +1,7 @@
+ /* Navbar */
+ .navbar-link{
+    text-decoration: none;
+    color: rgba(99, 149, 224, 0.822);
+    font-size: 1em; 
+    margin-left: 10px; 
+  }  

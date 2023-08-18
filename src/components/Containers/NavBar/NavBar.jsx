@@ -1,18 +1,19 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css"; 
-import { Link } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Link, NavLink } from "react-router-dom";
 import CartWidget from "../../Pure/CartWidget/CartWidget";
+import './navbar.css';
 
 const NavBar = () => {
   return (
-    <> 
+    <>
       <nav className="navbar navbar-dark navbar-expand-lg">
         <div className="container-fluid ">
           <div>
-          <a className="navbar-link" href="#">
-            Shoes Market - 
-          </a>
-          <CartWidget/>
+            <NavLink to="/" className="navbar-link">
+              Shoes Market
+            </NavLink>
+            <CartWidget />
           </div>
           <button
             className="navbar-toggler"
@@ -26,11 +27,19 @@ const NavBar = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0" style={{alignItems: "center"}} >
-              <Link to="/" className="navbar-link">Home</Link> 
-              <Link to="/cart" className="navbar-link">Cart</Link>
-              <Link to="/about" className="navbar-link">About</Link> 
-              <Link to="/contact" className="navbar-link">Contact</Link> 
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0"  style={{ alignItems: "center" }} >
+              <NavLink to="/" className="navbar-link">
+                Home
+              </NavLink>
+              <NavLink to="/cart" className="navbar-link">
+                Cart
+              </NavLink>
+              <NavLink to="/about" className="navbar-link">
+                About
+              </NavLink>
+              <NavLink to="/contact" className="navbar-link">
+                Contact
+              </NavLink>
             </ul>
           </div>
         </div>

@@ -3,7 +3,25 @@
 .list-title{
   margin: 1em; 
   text-align: center;
-}   
+}  
+.subtitle{
+  display: flex;
+  margin: 0 auto;
+  align-items: baseline;
+  width: 90%;
+  max-width: 1240px;
+  padding: 30px 1px;
+}
+.subtitle-section{
+  font-size: 24px;
+  margin: 0px 10px 0px 0px;
+} 
+.subtitle-link{
+  text-decoration: none;
+  color: #1259c3;
+  font-size: 14px;
+  font-weight: 500;
+}
 
 /* Card Container */
 
@@ -38,13 +56,11 @@
   box-shadow: 0 4px 4px rgba(196, 194, 194, 0.512);
 }
 .card-title{
-  font-size: 18px;
+  font-size: 14px;
   margin: 0;
   color: #333;
-}
-.card-text{
-  line-height: 1.5;
-}
+  align-items: center;
+} 
 .card-picture{
   max-width: 100%; 
   min-width: 100%;
@@ -56,12 +72,23 @@
 .card-body {  
   display: flex;
   flex-direction: column; 
-  align-items: center;
   justify-content: space-between;
 } 
-.item-content{  
-  text-align: center;
-} 
+.card-price .card-title{  
+  text-align: start;
+}  
+.card-price{
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0;
+}
+.card-free{
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba(40, 183, 40, 0.955);
+}
+
+
 .count {
   margin: 10px;
 }

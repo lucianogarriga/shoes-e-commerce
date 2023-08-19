@@ -9,14 +9,14 @@ const Item = ({ item }) => {
   return (
     <div className="item">
       <a href="" className="card">
-        <div> 
+        <div>
           <img src={item.pictureUrl} className="card-picture" />
         </div>
         <div className="card-body">
           <div className="item-content">
-          <p className="card-title">{item.name}</p>
-          {/* <p className="card-text">{item.description}</p> */}
-            <h3>${item.price}</h3>
+            <p className="card-price">$ {item.price}</p>
+            <span className="card-free">Envío gratis</span>
+            <p className="card-title">{item.name}</p> 
             <ItemCount stock={5} initial={1} onAdd={onAdd} />
           </div>
         </div>

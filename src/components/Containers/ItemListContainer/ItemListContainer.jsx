@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import productos from '../../../data/products.json';
 import ItemList from '../../Pure/ItemList/ItemList'
+import Subtitle from '../../Pure/Subtitle/Subtitle';
 
 const ItemListContainer = () => {
  
@@ -23,7 +24,7 @@ const ItemListContainer = () => {
 
     return (
         <>
-            <h1 className='list-title'>Listado de productos</h1>
+            <Subtitle text="Ofertas"/>
             <p className='loading-text'>
             {loading ? "Cargando lista de productos..." : null}
             </p>

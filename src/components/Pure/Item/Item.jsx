@@ -17,7 +17,9 @@ const Item = ({ item }) => {
             <p className="card-price">$ {item.price}</p>
             <span className="card-free">Envío gratis</span>
             <p className="card-title">{item.name}</p> 
-            <ItemCount stock={5} initial={1} onAdd={onAdd} />
+          </div>
+          <div>
+          <ItemCount stock={5} initial={1} onAdd={onAdd} />
           </div>
         </div>
       </a>

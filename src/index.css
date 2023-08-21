@@ -10,7 +10,7 @@
   align-items: baseline;
   width: 90%;
   max-width: 1240px;
-  padding: 30px 1px;
+  padding: 40px 0px 10px 1px;
 }
 .subtitle-section{
   font-size: 24px;
@@ -37,8 +37,7 @@
 }
 
 /* Card Items */
-
-
+ 
 .card{
   background: white;
   text-decoration: none; 
@@ -58,6 +57,7 @@
 .card-title{
   font-size: 14px;
   margin: 0;
+  line-height: 1.5;
   color: #333;
   align-items: center;
 } 
@@ -67,7 +67,7 @@
   width: 280px; 
   margin: 0;
   padding: 0;
-  border-radius: 4px;
+  border-radius: 2px;
 }
 .card-body {  
   display: flex;

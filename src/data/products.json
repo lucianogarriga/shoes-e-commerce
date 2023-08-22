@@ -5,6 +5,7 @@
     "description": "Air Force 1 - Debuting in 1982 as a basketball must-have, the Air Force 1 came into its own in the '90s. The clean look of the classic white-on-white AF1 was endorsed from the basketball courts to the block and beyond. Finding its rhythm in hip-hop culture, releasing limited collabs and colorways, Air Force 1 became an iconic sneaker around the globe. And with over 2000 iterations of this staple, its impact on fashion, music and sneaker culture can’t be denied.",
     "price": 54000,
     "stock": 3, 
+    "category": "zapatillas",
     "pictureUrl": "https://www.digitalsport.com.ar/files/products/60c75a4fa0d71-559013-500x500.jpg"
   },
   {
@@ -13,6 +14,7 @@
     "description": "ADIDAS Originals Forum Low Men's Shoes -  Model No : FY7755 - Color :  CLOUD WHITE WITH BLUE - Made in China - Condition : Brand New with Original Box",
     "price": 49500,
     "stock": 5, 
+    "category": "zapatillas",
     "pictureUrl": "https://celadasa.vtexassets.com/arquivos/ids/206531-800-auto?v=637847632407130000&width=800&height=auto&aspect=true"
   },
   {
@@ -21,6 +23,7 @@
     "description": "What does the X stand for in RS-X? eXtreme perhaps? eXciting? All of the above? This thrice-eXaggerated form came from a process of stripping away everything from the original RS and building it back up with a stronger mix of materials and a design inspired by puzzles with layers and layers of colours and textures.",
     "price": 52500,
     "stock": 4, 
+    "category": "zapatillas",
     "pictureUrl": "https://i.ebayimg.com/images/g/E8oAAOSwKQNfO6K1/s-l1200.jpg"
   },
   {
@@ -29,6 +32,7 @@
     "description": "Simple looks street-sleek in the all new, uniquely unisex Amare Running Shoes. Featuring clean lines, a breathable textile upper, comfortable cushioning, bold PUMA branding and a hip, trend-setting look, this polished pair is a must have for active style seekers. Whether you're pounding the pavement or out for a casual cruise, you'll bring eye-catching and athletic together in every stride.",
     "price": 38999,
     "stock": 5, 
+    "category": "zapatillas",
     "pictureUrl": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/376209/20/sv01/fnd/THA/fmt/png/Amare-Running-Shoes"
   },
   {
@@ -37,6 +41,7 @@
     "description": "Evolve your game and celebrate your pursuit of progress with the Nike Progress Pack. The Nike Phantom GT2 Pro FG has an updated design and raised patterning to help create optimal spin to control the flight of the ball. Off-center lacing provides a clean strike zone for skillful dribbling, passing and shooting. On the pitch, every touch matters and the Phantom GT2 Pro will make sure you control every single one.",
     "price": 84000,
     "stock": 6, 
+    "category": "botines",
     "pictureUrl": "https://www.tradeinn.com/f/13883/138839191/nike-botas-futbol-phantom-gt2-pro-fg.jpg"
   },
   {
@@ -45,6 +50,7 @@
     "description": "Evolve your game and celebrate your pursuit of progress with the Nike Progress Pack. The Nike Phantom GT2 Pro FG has an updated design and raised patterning to help create optimal spin to control the flight of the ball. Off-center lacing provides a clean strike zone for skillful dribbling, passing and shooting. On the pitch, every touch matters and the Phantom GT2 Pro will make sure you control every single one.",
     "price": 79500,
     "stock": 3, 
+    "category": "botines",
     "pictureUrl": "https://www.tradeinn.com/f/13812/138126162/nike-botas-futbol-phantom-gt2-pro-fg.jpg"
   },
   {
@@ -53,6 +59,7 @@
     "description": "Unlock multidimensional speed in the new adidas X SpeedPortal, featured in the new Beyond Fast Pack. These boots feature a flexible, full-length Carbitex carbon plate on their firm ground outsole, to support instant reactions. An adaptive Adidas PRIMEKNIT collar pairs with an external heel lock to offer a secure feel at high speeds. Enjoy light-speed sprints and physics-defying sidesteps with the adidas X SpeedPortal.1 FG boots.",
     "price": 92500,
     "stock": 4, 
+    "category": "botines",
     "pictureUrl": "https://images.media-arocam.com/wObpezNkvrQKzk0hYLWthedLP-4=/fit-in/450x450/W29265/SKW/MyvsB2Mv_SKW.png"
   },
   {
@@ -61,6 +68,7 @@
     "description": "Find your flow and leave the rest behind. Whatever speed means to you, these adidas X soccer cleats keep you out in front. For the sprinter, a Carbitex carbon fiber insert and raised forefoot spark explosive propulsion. For the wizard, a stabilizing Agilitycage straps you in for jinking runs. For the fox-in-the-box, the laceless adidas Primeknit skin adds comfort while you wait to strike.",
     "price": 98999,
     "stock": 5, 
+    "category": "botines",
     "pictureUrl": "https://soccerzoneusa.com/cdn/shop/products/FY6866_1200x.jpg?v=1631830991"
   }
 ]

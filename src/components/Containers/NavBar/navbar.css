@@ -21,5 +21,12 @@ form{
   display: flex;
 }
 .form-control{
-  width: 400px;
+  width: 300px;
+}
+
+/* Desktop Version */
+@media only screen and (min-width: 920px){
+  .form-control{
+    width: 400px;
+  }
 }

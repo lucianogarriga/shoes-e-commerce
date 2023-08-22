@@ -5,7 +5,6 @@ import CartWidget from "../../Pure/CartWidget/CartWidget";
 import "./navbar.css";
 
 const NavBar = () => {
-  
   return (
     <div className="navbar-container">
       <nav className="navbar navbar-ligth navbar-expand-lg">
@@ -38,9 +37,14 @@ const NavBar = () => {
             </form>
             <ul className="navbar-nav mr-auto">
               <li className="nav-item">
-                <CartWidget />
-                <NavLink to="/category" className="navbar-link">
-                  Categorias
+                <NavLink to="/cart" className="navbar-link">
+                  <CartWidget />
+                </NavLink>
+                <NavLink to="/category/zapatillas" className="navbar-link">
+                  Zapatillas
+                </NavLink>
+                <NavLink to="/category/botines" className="navbar-link">
+                  Botines
                 </NavLink>
                 <NavLink to="/about" className="navbar-link">
                   Nosotros

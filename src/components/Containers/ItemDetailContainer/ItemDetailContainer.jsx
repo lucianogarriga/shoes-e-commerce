@@ -7,11 +7,14 @@ import { useParams } from "react-router-dom";
 const ItemDetailContainer = () => {
   const [data, setData] = useState({});
   // Para guardar 1 objeto, justamente inicializamos el estado como un objeto vacio.
+  const [loading, setLoading] = useState(true);
+
   const { detailId } = useParams();
 
   useEffect(() => {
     const getData = new Promise((resolve) => {
       setTimeout(() => {
+        setLoading(false);
         // Al resolverse, debe traer el objeto
         resolve(productos);
       }, 1000);
@@ -29,6 +32,7 @@ const ItemDetailContainer = () => {
 
   return (
     <div>
+
       {/* Tomamos la data del objeto guardado en el estado,
      y lo pasamos al ItemDetail */}
       <ItemDetail data={data} />

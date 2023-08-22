@@ -1,14 +1,15 @@
 import React from "react";
 import ItemCount from "../ItemCount/ItemCount";
+import { Link } from "react-router-dom";
 
 const Item = ({ item }) => {
   const onAdd = (count) => {
-    console.log(`Compraste ${count} unidades!`);
+    console.log(`Ingresaste a ver ${count} productos`);
   };
 
   return (
     <div className="item">
-      <a href="" className="card">
+      <Link to={`/detail/${item.id}`} className="card">
         <div>
           <img src={item.pictureUrl} className="card-picture" />
         </div>
@@ -22,7 +23,7 @@ const Item = ({ item }) => {
           <ItemCount stock={5} initial={1} onAdd={onAdd} />
           </div>
         </div>
-      </a>
+      </Link>
     </div>
   );
 };

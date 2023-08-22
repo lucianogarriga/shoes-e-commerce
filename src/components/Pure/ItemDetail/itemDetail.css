@@ -1,6 +1,11 @@
 /* ItemDetail */
-
  
+.product-detail-container{
+  background-color: #ffffff;
+  margin: 3rem 1rem;
+  padding: 0px 0px 40px;
+}
+
 .product-detail-card {
   margin: 2rem; 
   display: flex;
@@ -14,7 +19,7 @@
   width: 55%;
   height: 55%;
 }
-.product-detail-name, .product-detail-price, .product-detail-title{
+.product-detail-name, .product-detail-price{
   text-align: center;
   margin: 12px 2px;
 }
@@ -51,9 +56,5 @@
   } 
   .product-description-p{
     font-size: 12px;
-  }
-  .product-detail-title{
-    text-align: center;
-    margin: 1rem 0rem;
-  }
+  } 
 }

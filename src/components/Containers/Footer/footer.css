@@ -2,16 +2,18 @@
 
 .footer-container{
     background-color: #ffffff;
-    min-height: 4em;
     margin-top: 30px;
 }
 .footer-name-box{
     padding: 20px 0px;
+    max-width: 80em;
+    min-height: 4em;
+    margin: 0 auto;
 }
 .footer-name{
     text-align: start;
     margin: 0;
-    padding: 0px 0px 0px 50px;
+    padding: 0px 0px 0px 20px;
     font-size: 14px;
     color: rgb(116, 116, 116);
 }

@@ -1,10 +1,25 @@
  /* Navbar */
  .navbar-link{
     text-decoration: none; 
-    color: #333333;
+    color: #333333fa;
     font-size: 1em; 
     margin-left: 10px; 
   }  
 .navbar-container{
   background-color: #fff159;
+} 
+.navbar-nav.navbar-center {
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
+}
+.nav-item{
+  display: flex;
+  flex-direction: row;
+}
+form{
+  display: flex;
+}
+.form-control{
+  width: 400px;
 }

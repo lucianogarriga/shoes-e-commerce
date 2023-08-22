@@ -1,0 +1,17 @@
+/* Footer Styles */
+
+.footer-container{
+    background-color: #ffffff;
+    min-height: 4em;
+    margin-top: 30px;
+}
+.footer-name-box{
+    padding: 20px 0px;
+}
+.footer-name{
+    text-align: start;
+    margin: 0;
+    padding: 0px 0px 0px 50px;
+    font-size: 14px;
+    color: rgb(116, 116, 116);
+}

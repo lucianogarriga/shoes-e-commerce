@@ -3,9 +3,7 @@ import ItemCount from "../ItemCount/ItemCount";
 import { Link } from "react-router-dom";
 
 const Item = ({ item }) => {
-  const onAdd = (count) => {
-    console.log(`Ingresaste a ver ${count} productos`);
-  };
+
 
   return (
     <div className="item">
@@ -20,7 +18,7 @@ const Item = ({ item }) => {
             <p className="card-title">{item.name}</p> 
           </div>
           <div>
-          <ItemCount stock={5} initial={1} onAdd={onAdd} />
+          {/* <ItemCount stock={5} initial={1} onAdd={onAdd} /> */}
           </div>
         </div>
       </Link>

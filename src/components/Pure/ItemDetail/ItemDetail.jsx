@@ -5,6 +5,10 @@ import ItemCount from "../ItemCount/ItemCount";
 const ItemDetail = ({ data }) => {
   const [loading, setLoading] = useState(true);
 
+  const onAdd = (count) => {
+    console.log(`Agregaste ${count} productos`);
+  };
+
   useEffect(() => {
     const loadingText = new Promise((resolve) => {
       setTimeout(() => {
@@ -17,7 +21,7 @@ const ItemDetail = ({ data }) => {
     <div className="container">
       <div className="product-detail-container">
         {loading ? (
-          <p className="loading-text">"Cargando producto..." </p>
+          <p className="product-detail-loading-text"> Cargando detalle del producto... </p>
         ) : (
           <>
             <div className="product-detail-card">
@@ -29,6 +33,7 @@ const ItemDetail = ({ data }) => {
               <div className="content">
                 <h3 className="product-detail-name">{data.name}</h3>
                 <p className="product-detail-price">${data.price}</p>
+                <ItemCount stock={5} initial={1} onAdd={onAdd} /> 
               </div>
             </div>
             <div className="product-description-box">

@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Nike Air Force 1 Low Retro",
-    "description": "Air Force 1 - Debuting in 1982 as a basketball must-have, the Air Force 1 came into its own in the '90s. The clean look of the classic white-on-white AF1 was endorsed from the basketball courts to the block and beyond. Finding its rhythm in hip-hop culture, releasing limited collabs and colorways, Air Force 1 became an iconic sneaker around the globe. And with over 2000 iterations of this staple, its impact on fashion, music and sneaker culture can’t be denied.",
+    "description": "Si hablamos de clásicos, es imposible no mencionar a la Air Force 1. El que es el modelo más vendido de la historia de Nike, continúa siendo tendencia en todo el mundo.     Presentado por primera vez en el año 82, actualmente podemos encontrar una gran cantidad de versiones, siendo ésta, la que es totalmente blanca, la que más éxitos acumula. Convertida en todo un icono de la cultura urbana, la Air Force 1 combina con con tus mejores outfits y, gracias a su carácter clásico, podrás afrontar con ella cualquier situación.",
     "price": 54000,
     "stock": 3, 
     "category": "zapatillas",
@@ -10,8 +10,8 @@
   },
   {
     "id": 2,
-    "name": "Adidas Originals Forum Low Shoes",
-    "description": "ADIDAS Originals Forum Low Men's Shoes -  Model No : FY7755 - Color :  CLOUD WHITE WITH BLUE - Made in China - Condition : Brand New with Original Box",
+    "name": "Adidas Originals Forum Low",
+    "description": "Más que un calzado, es una declaración de estilo. Las adidas Forum llegaron a la escena en el 84 y ganaron seguidores en la cancha y en el mundo de la música. Este par de zapatillas clásicas trae de vuelta la actitud de los 80, la energía explosiva del baloncesto y el icónico diseño de tobillo en X, destilados en una versión de corte bajo diseñada para las calles.",
     "price": 49500,
     "stock": 5, 
     "category": "zapatillas",
@@ -20,7 +20,7 @@
   {
     "id": 3,
     "name": "Puma Trinomic Compression XS 500",
-    "description": "What does the X stand for in RS-X? eXtreme perhaps? eXciting? All of the above? This thrice-eXaggerated form came from a process of stripping away everything from the original RS and building it back up with a stronger mix of materials and a design inspired by puzzles with layers and layers of colours and textures.",
+    "description": "Sumá un look canchero a tu outfit con las Zapatillas Puma Trinomic Compression XS 500. Cuentan con una capellada de cuero sintético y una suela de caucho que aportan seguridad y comodidad vayas donde vayas. No pierdas tu rumbo y mantenete siempre activo.",
     "price": 52500,
     "stock": 4, 
     "category": "zapatillas",
@@ -28,8 +28,8 @@
   },
   {
     "id": 4,
-    "name": "Puma Amare Running Shoes",
-    "description": "Simple looks street-sleek in the all new, uniquely unisex Amare Running Shoes. Featuring clean lines, a breathable textile upper, comfortable cushioning, bold PUMA branding and a hip, trend-setting look, this polished pair is a must have for active style seekers. Whether you're pounding the pavement or out for a casual cruise, you'll bring eye-catching and athletic together in every stride.",
+    "name": "Puma Amare Running Black",
+    "description": "Con las nuevas y exclusivas zapatillas para correr PUMA Amare lo simple se ve urbano y elegante. Tienen líneas definidas, un empeine de material textil respirable, amortiguación cómoda, detalles de marca PUMA atrevidos y un estilo vanguardista a la moda. Este refinado modelo es imprescindible para quienes buscan un estilo activo. Ya sea que estés corriendo por las calles o dando un paseo, siempre combinarás el deporte y el estilo. Tecnología Soft Foam en la plantilla que permite una pisada confortable y adaptable a tu pie.",
     "price": 38999,
     "stock": 5, 
     "category": "zapatillas",
@@ -38,7 +38,7 @@
   {
     "id": 5,
     "name": "Nike Phantom GT2 Pro FG",
-    "description": "Evolve your game and celebrate your pursuit of progress with the Nike Progress Pack. The Nike Phantom GT2 Pro FG has an updated design and raised patterning to help create optimal spin to control the flight of the ball. Off-center lacing provides a clean strike zone for skillful dribbling, passing and shooting. On the pitch, every touch matters and the Phantom GT2 Pro will make sure you control every single one.",
+    "description": "A partir de las características del Phantom GT, el Nike Phantom GT2 Elite FG presenta un diseño actualizado y unos patrones gráficos en relieve para optimizar el giro y controlar la trayectoria de la pelota. Las agujetas descentradas despejan la zona de impacto para regatear, pasar y tirar hábilmente.",
     "price": 84000,
     "stock": 6, 
     "category": "botines",
@@ -47,7 +47,7 @@
   {
     "id": 6,
     "name": "Nike Phantom GT2 Pro FG",    
-    "description": "Evolve your game and celebrate your pursuit of progress with the Nike Progress Pack. The Nike Phantom GT2 Pro FG has an updated design and raised patterning to help create optimal spin to control the flight of the ball. Off-center lacing provides a clean strike zone for skillful dribbling, passing and shooting. On the pitch, every touch matters and the Phantom GT2 Pro will make sure you control every single one.",
+    "description": "Creadas para los auténticos profesionales del balompié, las botas de fútbol Nike Phantom GT2 Pro FG son la propuesta definitiva de la marca del swoosh para hacer del campo tu territorio exclusivo. Ligeras, resistentes y con una sujeción de tope de gama, estas botas te permitirán atacar sin capacidad alguna de retaliación por parte del equipo contrario.  El corte superior de las Phantom GT2 Pro FG está hecho en una malla de ingeniería muy transpirable, delgada y flexible a la que se le ha aplicado NIKESKIN, una textura de relieve en 3D que mejora el agarre y el toque del balón para hacer saques, regates y tiros al área. El cierre de cordones asimétrico ahora incorpora Flyknit para una sujeción aún mayor en el mediopié.",
     "price": 79500,
     "stock": 3, 
     "category": "botines",
@@ -56,7 +56,7 @@
   {
     "id": 7,
     "name": "Adidas X SpeedPortal.1 FG",
-    "description": "Unlock multidimensional speed in the new adidas X SpeedPortal, featured in the new Beyond Fast Pack. These boots feature a flexible, full-length Carbitex carbon plate on their firm ground outsole, to support instant reactions. An adaptive Adidas PRIMEKNIT collar pairs with an external heel lock to offer a secure feel at high speeds. Enjoy light-speed sprints and physics-defying sidesteps with the adidas X SpeedPortal.1 FG boots.",
+    "description": "Adidas X Speedportal.1 FG. Los buenos jugadores crean tiempo y espacio.  Los grandes los dejan a ambos atrás. Desbloquea la velocidad multidimensional en adidas X Speedportal. Elegantes y súper cómodas, estas botas de fútbol para niños soportan reacciones instantáneas con tacos adicionales en el antepié en su suela exterior para terreno firme. Parte de su parte superior Speedskin que abraza los pies, un collar adaptativo adidas PRIMEKNIT y un bloqueo de talón de TPU se unen para mantenerlo atado para carreras de velocidad de la luz y pasos laterales que desafían la física. Fabricada con una serie de materiales reciclados, esta parte superior presenta al menos un 50 % de contenido reciclado.",
     "price": 92500,
     "stock": 4, 
     "category": "botines",
@@ -65,7 +65,7 @@
   {
     "id": 8,
     "name": "Adidas X SpeedFlow + FIRM GROUND",
-    "description": "Find your flow and leave the rest behind. Whatever speed means to you, these adidas X soccer cleats keep you out in front. For the sprinter, a Carbitex carbon fiber insert and raised forefoot spark explosive propulsion. For the wizard, a stabilizing Agilitycage straps you in for jinking runs. For the fox-in-the-box, the laceless adidas Primeknit skin adds comfort while you wait to strike.",
+    "description": "La conexión que se genera entre tu cerebro y la pelota siempre pasa por los botines. Cuando la claridad mental se combina con la rapidez del cuerpo, te convertís en la versión más veloz de vos mismo. Encontrá tu ritmo y dejá atrás a los demás. El exterior semitraslúcido Speedskin de estos botines adidas X te mantiene cómodo mientras entrás en acción. La suela de TPU permite una aceleración explosiva en canchas de terreno firme. El ajuste ceñido y sin cordones te permite moverte con estabilidad en todo momento.",
     "price": 98999,
     "stock": 5, 
     "category": "botines",

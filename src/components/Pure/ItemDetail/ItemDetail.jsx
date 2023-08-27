@@ -43,17 +43,19 @@ const ItemDetail = ({ data }) => {
     //     )}
     //   </div>
     // </div>
-    <div class="container">
-      <div class="item-gallery-container"> 2 IMG</div>
-      <div class="item-header-title">1 TITLE</div>
-      <div class="item-price-container">3 PRICE </div>
-      <div class="item-quantity-buttons"> 4 QUANTITY BUTTONS  </div>        
-      <div class="item-specs">5 SPECS</div>  
-      <div class="item-features-container">6 FEATURES/CARACT</div>
-      <div class="item-related-container">7 RELATED</div>
-      <div class="item-seller-info">8 SELLER INFO</div>
-      <div class="item-description-container">9 DESCRIPTION</div>
-      <div class="item-payments-methods">10 PAYMENTS</div> 
+    <div className="container">
+      <div className="wrapper">
+        <div className="item-title">1 TITLE</div>
+        <div className="item-img"> 2 IMG</div>
+        <div className="item-price">3 PRICE </div>
+        <div className="item-buttons"> 4 QUANTITY BUTTONS </div>
+        <div className="item-specs">5 SPECS</div>
+        <div className="item-features">6 FEATURES/CARACT</div>
+        <div className="item-related">7 RELATED</div>
+        <div className="item-seller">8 SELLER INFO</div>
+        <div className="item-description">9 DESCRIPTION</div>
+        <div className="item-payments">10 PAYMENTS </div>
+      </div>
     </div>
   );
 };

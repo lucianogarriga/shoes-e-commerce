@@ -1,4 +1,4 @@
- .wrapper{
+ /* .wrapper{
   display: grid;
   grid-template-columns: repeat(3,1fr);
   grid-template-rows: repeat(3,120px);
@@ -45,11 +45,78 @@
 .item-payments{
   grid-area: 9 / 3 / 13 / 3;
   border: 3px solid tomato;
+} */
+.wrapper{
+  display: grid;
+  grid-template-columns: 3fr 3fr 2fr;
+  grid-template-areas: 
+  "image title buttons"
+  "image price buttons"
+  "image specs buttons"
+  "related related info"
+  "features features info"
+  "description description payments" 
+  ;
+  grid-gap: 10px;
+}
+.item-title{
+  grid-area: title;
+  border: 3px solid tomato;
+}
+.item-img{
+  grid-area: image;
+  border: 3px solid blue; 
+}
+.item-price{
+  grid-area: price;
+  border: 3px solid green;
+}
+.item-buttons{
+  grid-area: buttons;
+  border: 3px solid gray;
+}
+.item-specs{
+  grid-area: specs;
+  border: 3px solid tomato;
+}
+.item-features{
+  grid-area: features;
+  border: 3px solid rgb(172, 14, 141);
+}
+.item-related{
+  grid-area: related;
+  border: 3px solid red;
+}
+.item-seller{
+  grid-area: info;
+  border: 3px solid blue; 
+}
+.item-description{
+  grid-area: description;
+  border: 3px solid gray;
+}
+.item-payments{
+  grid-area: payments;
+  border: 3px solid green;
 }
 
-
-
-
+@media screen and (max-width: 980px){
+  .wrapper {
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "title"
+    "image"
+    "price"
+    "specs"
+    "buttons"
+    "related"
+    "info"
+    "features"
+    "description"
+    "payments"
+     ;
+  }
+}
 
 /* ItemDetail */
  
@@ -75,8 +142,7 @@
   margin: 0rem 1rem;
 }
 .product-detail-image {
-  width: 55%;
-  height: 55%;
+  width: 100%; 
 }
 .product-detail-name, .product-detail-price{
   text-align: center;
@@ -115,7 +181,6 @@
   } 
   .product-description-p{
     font-size: 12px;
-  }  
-  
+  }   
   
 }

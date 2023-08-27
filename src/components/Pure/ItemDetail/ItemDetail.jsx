@@ -25,11 +25,7 @@ const ItemDetail = ({ data }) => {
     //     ) : (
     //       <>
     //         <div className="product-detail-card">
-    //           <img
-    //             className="product-detail-image"
-    //             src={data.pictureUrl}
-    //             alt={data.image}
-    //           />
+
     //           <div className="content">
     //             <h3 className="product-detail-name">{data.name}</h3>
     //             <p className="product-detail-price">${data.price}</p>
@@ -46,7 +42,14 @@ const ItemDetail = ({ data }) => {
     <div className="container">
       <div className="wrapper">
         <div className="item-title">1 TITLE</div>
-        <div className="item-img"> 2 IMG</div>
+        <div className="item-img"> 
+        2 IMAGE
+          {/* <img
+            className="product-detail-image"
+            src={data.pictureUrl}
+            alt={data.image}
+          /> */}
+        </div>
         <div className="item-price">3 PRICE </div>
         <div className="item-buttons"> 4 QUANTITY BUTTONS </div>
         <div className="item-specs">5 SPECS</div>

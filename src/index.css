@@ -89,12 +89,7 @@
   font-size: 13px;
   font-weight: 600;
   color: rgba(40, 183, 40, 0.955);
-}
-
-
-.count {
-  margin: 10px;
-}
+} 
 .loading-text{
   text-align: center;
 }

@@ -17,28 +17,30 @@ const ItemDetail = ({ data }) => {
     });
   }, []);
 
-  return ( 
+  return (
+    //
 
- 
-    //             
- 
     //           </div>
     //         </div>
     //         <div className="product-description-box">
-    //           
+    //
     //       </>
     //     )}
     <div className="container">
       <div className="product-detail-container">
         {loading ? (
-          <p className="product-detail-loading-text"> 
-            Cargando detalle del producto... 
+          <p className="product-detail-loading-text">
+            Cargando detalle del producto...
           </p>
         ) : (
           <>
             <div className="item-title">
-            <div></div>
-            <h3 className="product-detail-title">{data.name}</h3>
+              <div className="item-header">
+                <p className="item-header-subtitle">Nuevo | +5mil vendidos</p>
+              </div>
+              <div>
+                <p className="product-detail-title">{data.name}</p>
+              </div>
             </div>
             <div className="item-img">
               <img
@@ -48,18 +50,35 @@ const ItemDetail = ({ data }) => {
               />
             </div>
             <div className="item-price">
-            <p className="product-detail-price">${data.price}</p>
-             </div>
-            <div className="item-buttons"> <ItemCount stock={5} initial={1} onAdd={onAdd} /></div>
-            <div className="item-specs">5 SPECS</div>
+              <div className="item-price-pdp">
+                <span className="product-detail-ex-price">
+                  ${parseInt(data.price * 1.15)} 
+                </span>
+                <div className="product-detail-price-container">
+                  <span className="product-detail-price">${data.price}</span>
+                  <span className="product-detail-price-off">15% OFF</span>
+                </div>
+                <div className="product-detail-price-sub">
+                  <span className="product-detail-price-pay">
+                    en 12x $ {(data.price / 12) * 1.4} pagando con Mercado
+                    Crédito
+                  </span>
+                </div>
+              </div>
+              <div>
+                <span className="product-detail-modal">Ver los medio de pago</span> 
+              </div>
+            </div>
+            <div className="item-buttons">
+              <ItemCount stock={5} initial={1} onAdd={onAdd} />
+            </div>
+            {/* <div className="item-specs">5 SPECS</div>
             <div className="item-features">6 FEATURES/CARACT</div>
             <div className="item-related">7 RELATED</div>
-            <div className="item-seller">8 SELLER INFO</div>
+            <div className="item-seller">8 SELLER INFO</div> */}
             <div className="item-description">
-            <h2 className="item-title-description">
-              Descripción
-            </h2>
-            <p className="product-description-p">{data.description}</p> 
+              <h2 className="item-title-description">Descripción</h2>
+              <p className="product-description-p">{data.description}</p>
             </div>
             <div className="item-payments">10 PAYMENTS </div>
           </>

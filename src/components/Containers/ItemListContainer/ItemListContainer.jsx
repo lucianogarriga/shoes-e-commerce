@@ -8,7 +8,7 @@ import { useParams } from "react-router-dom";
 const ItemListContainer = () => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
-  
+
   const { categoryId } = useParams();
 
   useEffect(() => {
@@ -19,21 +19,25 @@ const ItemListContainer = () => {
       }, 2000);
     });
     if (categoryId) {
-      getData.then((res) => setData(res.filter(product => product.category === categoryId)) );
+      getData.then((res) =>
+        setData(res.filter((product) => product.category === categoryId))
+      );
     } else {
       getData.then((resolve) => {
-        setData(resolve); 
+        setData(resolve);
       });
     }
   }, [categoryId]);
 
   return (
     <>
-      <Subtitle text="Ofertas" />
-      <p className="loading-text">
-        {loading ? "Cargando lista de productos..." : null}
-      </p>
-      <ItemList data={data} />
+      <div className="item-list-body">
+        <Subtitle text="Ofertas" />
+        <p className="loading-text">
+          {loading ? "Cargando lista de productos..." : null}
+        </p>
+        <ItemList data={data} />
+      </div>
     </>
   );
 };

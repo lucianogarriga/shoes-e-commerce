@@ -29,7 +29,7 @@ const ItemDetailContainer = () => {
   }, [detailId]);
 
   return (
-    <div> 
+    <div className="item-detail-body"> 
       {/* Tomamos la data del objeto guardado en el estado,
      y lo pasamos al ItemDetail */}
       <ItemDetail data={data} />

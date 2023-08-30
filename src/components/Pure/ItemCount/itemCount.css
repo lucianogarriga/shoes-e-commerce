@@ -14,9 +14,9 @@
 }
 .item-count-quantity {
     display: flex; 
-    font-size: 14px;
     align-items: baseline;
     justify-content: start;
+    font-size: 14px;
 }
 .item-quantity-selected, .item-stock-text{
     font-weight: 600;

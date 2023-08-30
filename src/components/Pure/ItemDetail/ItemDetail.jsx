@@ -60,13 +60,12 @@ const ItemDetail = ({ data }) => {
                 </div>
                 <div className="product-detail-price-sub">
                   <span className="product-detail-price-pay">
-                    en 12x $ {(data.price / 12) * 1.4} pagando con Mercado
-                    Crédito
+                    en 12x $ {(data.price / 12) * 1.4} 
                   </span>
                 </div>
               </div>
               <div>
-                <span className="product-detail-modal">Ver los medio de pago</span> 
+                <a href="https://www.mercadolibre.com.ar/gz/home/payments/methods" className="product-detail-modal">Ver los medio de pago</a> 
               </div>
             </div>
             <div className="item-buttons">

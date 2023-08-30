@@ -94,9 +94,7 @@
 }
 
 /* ITEM - PRICE */
-.item-price{
-  margin: 5px 20px;
-}
+ 
 .item-price-pdp{
   display: flex;
   flex-direction: column;
@@ -115,7 +113,7 @@
 
 .product-detail-price-container{ 
   display: flex; 
-  align-items: center; 
+  align-items: center;
   justify-content: flex-start;
 }
 .product-detail-price{
@@ -129,7 +127,6 @@
   font-weight: 500;
 }
 
-
 .product-detail-price-sub{
   display: flex;
   flex-direction: column;
@@ -140,6 +137,14 @@
 .product-detail-price-pay{
   font-size: 18px;
 }
+.product-detail-price-modal{
+  display: inline;
+  font-size: 14px;
+  line-height: 18.9px;
+  color: #3483fa;
+}
+
+
 
 /* ITEM - TITLE */
 .product-detail-title{ 

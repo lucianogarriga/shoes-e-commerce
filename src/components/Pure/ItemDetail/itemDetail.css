@@ -169,6 +169,7 @@
 
 
 @media screen and (max-width: 990px) {
+ 
   .item-title, .product-detail-price, 
   .item-buttons, .product-detail-price-pay{ 
     margin: 10px 0px 0px 2px; 

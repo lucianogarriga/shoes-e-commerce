@@ -9,7 +9,6 @@ body{
   margin: 0 auto;
   /* max-width: 80em; */
 	font-family: 'proxima-nova', sans-serif;
-  background-color: #ebebeb;
   color: #000000;
   line-height: 1.5; 
 }
@@ -17,9 +16,4 @@ body{
 a{
   text-decoration: none;
 }
-
-@media screen and (max-width: 990px) {
-  body{
-    background-color: #ffffff;
-  }
-}
+ 

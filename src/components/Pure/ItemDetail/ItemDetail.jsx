@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./itemDetail.css";
 import ItemCount from "../ItemCount/ItemCount";
+import ItemPrice from "./ItemPrice";
+import ItemSell from "./ItemSell";
 
 const ItemDetail = ({ data }) => {
   const [loading, setLoading] = useState(true);
@@ -17,15 +19,7 @@ const ItemDetail = ({ data }) => {
     });
   }, []);
 
-  return (
-    //
-
-    //           </div>
-    //         </div>
-    //         <div className="product-description-box">
-    //
-    //       </>
-    //     )}
+  return ( 
     <div className="container">
       <div className="product-detail-container">
         {loading ? (
@@ -49,25 +43,8 @@ const ItemDetail = ({ data }) => {
                 alt={data.image}
               />
             </div>
-            <div className="item-price">
-              <div className="item-price-pdp">
-                <span className="product-detail-ex-price">
-                  $ {parseInt(data.price * 1.15)} 
-                </span>
-                <div className="product-detail-price-container">
-                  <span className="product-detail-price">${data.price}</span>
-                  <span className="product-detail-price-off">15% OFF</span>
-                </div>
-                <div className="product-detail-price-sub">
-                  <span className="product-detail-price-pay">
-                    en 12x $ {parseInt((data.price / 12) * 1.4)} 
-                  </span>
-                </div>
-              </div>
-              <div className="product-detail-modal-container">
-                <a href="https://www.mercadolibre.com.ar/gz/home/payments/methods" className="product-detail-modal">Ver los medio de pago</a> 
-              </div>
-            </div>
+            <ItemPrice data={data}/>
+            <ItemSell/>
             <div className="item-buttons">
               <ItemCount stock={5} initial={1} onAdd={onAdd} />
             </div>
@@ -79,7 +56,7 @@ const ItemDetail = ({ data }) => {
               <h2 className="item-title-description">Descripción</h2>
               <p className="product-description-p">{data.description}</p>
             </div>
-            <div className="item-payments">10 PAYMENTS </div>
+            {/* <div className="item-payments">10 PAYMENTS </div> */}
           </>
         )}
       </div>

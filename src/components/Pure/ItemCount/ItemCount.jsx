@@ -19,7 +19,7 @@ const ItemCount = ({ stock, initial, onAdd }) => {
   return (
     <div className="item-count-container">
       <div className="item-count-stock">
-        <p className="item-stock-text">Stock disponible</p>
+        
         <div className="item-count-quantity">
         <p className="count">Cantidad: <span className="item-quantity-selected"> {count} unidad</span></p>
         <p className="item-quantity-available"> ({stock} disponibles) </p>

@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-import "./itemListContainer.css";
+import React, { useEffect, useState } from "react"; 
 import productos from "../../../data/products.json";
 import ItemList from "../../Pure/ItemList/ItemList";
 import Subtitle from "../../Pure/Subtitle/Subtitle";

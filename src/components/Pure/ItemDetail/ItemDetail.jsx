@@ -36,7 +36,7 @@ const ItemDetail = ({ data }) => {
           <>
             <div className="item-title">
               <div className="item-header">
-                <p className="item-header-subtitle">Nuevo | +5mil vendidos</p>
+                <span className="item-header-subtitle">Nuevo | +5mil vendidos</span>
               </div>
               <div>
                 <p className="product-detail-title">{data.name}</p>
@@ -52,7 +52,7 @@ const ItemDetail = ({ data }) => {
             <div className="item-price">
               <div className="item-price-pdp">
                 <span className="product-detail-ex-price">
-                  ${parseInt(data.price * 1.15)} 
+                  $ {parseInt(data.price * 1.15)} 
                 </span>
                 <div className="product-detail-price-container">
                   <span className="product-detail-price">${data.price}</span>
@@ -60,11 +60,11 @@ const ItemDetail = ({ data }) => {
                 </div>
                 <div className="product-detail-price-sub">
                   <span className="product-detail-price-pay">
-                    en 12x $ {(data.price / 12) * 1.4} 
+                    en 12x $ {parseInt((data.price / 12) * 1.4)} 
                   </span>
                 </div>
               </div>
-              <div>
+              <div className="product-detail-modal-container">
                 <a href="https://www.mercadolibre.com.ar/gz/home/payments/methods" className="product-detail-modal">Ver los medio de pago</a> 
               </div>
             </div>

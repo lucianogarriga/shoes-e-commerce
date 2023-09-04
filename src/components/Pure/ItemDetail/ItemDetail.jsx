@@ -19,7 +19,7 @@ const ItemDetail = ({ data }) => {
     });
   }, []);
 
-  return ( 
+  return (
     <div className="container">
       <div className="product-detail-container">
         {loading ? (
@@ -30,7 +30,9 @@ const ItemDetail = ({ data }) => {
           <>
             <div className="item-title">
               <div className="item-header">
-                <span className="item-header-subtitle">Nuevo | +5mil vendidos</span>
+                <span className="item-header-subtitle">
+                  Nuevo | +5mil vendidos
+                </span>
               </div>
               <div>
                 <p className="product-detail-title">{data.name}</p>
@@ -43,15 +45,16 @@ const ItemDetail = ({ data }) => {
                 alt={data.image}
               />
             </div>
-            <ItemPrice data={data}/>
-            <ItemSell/>
+            <ItemPrice data={data} />
+
             <div className="item-buttons">
+              <ItemSell />
               <ItemCount stock={5} initial={1} onAdd={onAdd} />
             </div>
-            {/* <div className="item-specs">5 SPECS</div>
+            <div className="item-specs">5 SPECS</div>
             <div className="item-features">6 FEATURES/CARACT</div>
             <div className="item-related">7 RELATED</div>
-            <div className="item-seller">8 SELLER INFO</div> */}
+            <div className="item-seller">8 SELLER INFO</div>
             <div className="item-description">
               <h2 className="item-title-description">Descripción</h2>
               <p className="product-description-p">{data.description}</p>

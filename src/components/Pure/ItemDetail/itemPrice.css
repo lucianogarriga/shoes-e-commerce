@@ -54,6 +54,7 @@
 @media screen and (max-width: 990px) {
   .product-detail-price-pay {
     margin: 10px 0px 0px 2px;
+    font-size: 16px;
   }
   .product-detail-ex-price {
     margin: 10px 0px;

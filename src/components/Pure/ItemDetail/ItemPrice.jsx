@@ -27,6 +27,10 @@ const ItemPrice = ({ data }) => {
             Ver los medio de pago
           </a>
         </div>
+        
+        <div>
+                <div className="item-offer-day">OFERTA DEL DIA</div>
+              </div>
       </div>
     </>
   );

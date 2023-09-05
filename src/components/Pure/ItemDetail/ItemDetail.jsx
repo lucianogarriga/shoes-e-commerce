@@ -51,15 +51,15 @@ const ItemDetail = ({ data }) => {
               <ItemSell />
               <ItemCount stock={5} initial={1} onAdd={onAdd} />
             </div>
-            <div className="item-specs">5 SPECS</div>
+            <div className="item-specs">Lo que tenés que saber de este producto</div>
             <div className="item-features">6 FEATURES/CARACT</div>
             <div className="item-related">7 RELATED</div>
-            <div className="item-seller">8 SELLER INFO</div>
+            <div className="item-seller">Información del vendedor</div>
             <div className="item-description">
-              <h2 className="item-title-description">Descripción</h2>
+              <h2  className="item-title-description">Descripción</h2>
               <p className="product-description-p">{data.description}</p>
             </div>
-            {/* <div className="item-payments">10 PAYMENTS </div> */}
+            <div className="item-payments">Medios de pago </div>
           </>
         )}
       </div>

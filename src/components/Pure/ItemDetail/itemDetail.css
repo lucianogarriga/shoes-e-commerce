@@ -25,8 +25,7 @@
   grid-area: buttons; 
 }
 .item-specs{
-  grid-area: specs;
-  border: 3px solid tomato;
+  grid-area: specs; 
 }
 .item-features{
   grid-area: features;
@@ -37,8 +36,7 @@
   border: 3px solid red;
 }
 .item-seller{
-  grid-area: info;
-  border: 3px solid blue; 
+  grid-area: info; 
 }
 .item-description{
   grid-area: description; 
@@ -112,7 +110,26 @@
   color: #7c7b7b;
 }
  
+/* Item buttons */
 
+.item-buttons{
+  border: 1px solid rgba(0,0,0,.1);
+  border-radius: 8px;
+  padding: 25px 16px;
+  margin: 12px; 
+}
+
+/* Item seller */
+
+.item-seller, .item-payments{
+  border: 1px solid rgba(0,0,0,.1);
+  border-radius: 8px;
+  padding: 32px 16px 24px;
+  margin: 12px; 
+}
+
+/* Item Payments */
+ 
 
 @media screen and (max-width: 990px) {
  
@@ -128,6 +145,11 @@
     font-size: 12px;
     font-weight: 400;
     color: #7c7b7b;
+  }
+
+  .item-buttons, .item-seller{
+    border: none;
+    margin: 12px 0px;
   }
   .product-detail-title{  
     font-size: 16px; 

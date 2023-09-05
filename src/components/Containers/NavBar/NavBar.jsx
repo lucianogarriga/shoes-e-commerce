@@ -29,7 +29,7 @@ const NavBar = () => {
                 className="form-control mr-sm-2"
                 type="search"
                 placeholder="Buscar productos, marcas y más"
-                aria-label="Search"
+                aria-label="Search" 
               ></input>
               <button className="btn my-2 my-sm-0" type="submit">
                 <i className="bi bi-search"></i>

@@ -141,6 +141,7 @@
   color: rgba(0,0,0,.9);
   line-height: 1.25;
   margin: 0;
+  padding: 24px 0px ;
 }
 .item-features-paragraph{
   margin-top: 32px;
@@ -157,7 +158,19 @@
   padding: 32px 16px 24px;
   margin: 12px; 
 }
+.item-title-seller, .item-title-payments{
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 24px;
+  width: 100%;
+} 
 
+/* Item Description */
+.item-title-description{
+  font-size: 24px;
+  font-weight: 400;
+  padding: 24px 0px ;
+}
 
 
 /* Item Payments */

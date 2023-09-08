@@ -79,7 +79,6 @@ const ItemDetail = ({ data }) => {
             </div>
             {/* <div className="item-related">7 RELATED</div> */}
             <div className="item-seller">
-              <hr />
               <h2 className="item-title-seller">
                 Información sobre el vendedor
               </h2>
@@ -90,7 +89,7 @@ const ItemDetail = ({ data }) => {
               <p className="product-description-p">{data.description}</p>
             </div>
             <div className="item-payments">
-              <h2 className="item-title-component">Medios de pago</h2>{" "}
+              <h2 className="item-title-payments">Medios de pago</h2>{" "}
             </div>
           </>
         )}

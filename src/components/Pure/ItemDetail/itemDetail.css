@@ -55,7 +55,7 @@
   line-height: 21.6px;
   padding: 0px 45px;
 }
-.item-title-description{
+.item-title-component{
   font-size: 24px;
   line-height: 30px;
   padding: 0px 0px 24px;
@@ -117,6 +117,38 @@
   margin: 12px; 
 }
 
+/* Item Specs */
+.item-specs{
+  margin-top: 32px;
+}
+.item-specs-title{
+  font-weight: 600;
+  font-size: 14px;
+  color: rgba(0,0,0,.9);
+}
+.item-specs-li{
+  margin-top: 16px;
+  line-height: 1.43em; 
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(0,0,0,.9);
+}
+
+/* Item Features */
+.item-title-features{
+  font-weight: 400;
+  font-size: 24px;
+  color: rgba(0,0,0,.9);
+  line-height: 1.25;
+  margin: 0;
+}
+.item-features-paragraph{
+  margin-top: 32px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 /* Item seller */
 
 .item-seller, .item-payments{
@@ -126,6 +158,8 @@
   margin: 12px; 
 }
 
+
+
 /* Item Payments */
  
 
@@ -134,8 +168,8 @@
   .item-title,  
   .item-buttons, .product-detail-price-pay{ 
     margin: 10px 0px 0px 2px; 
-  }
-  /* TODO: font-size ItemCount buttons */
+  } 
+
   .item-header{
     margin-bottom: 8px;
   }
@@ -151,15 +185,42 @@
     padding: 20px 0px;
   }
   .item-features, .item-description{
-    padding: 0px 8px;
+    padding: 0px 2px;
   }
+
+  /* Specs */ 
+  .item-specs-title, .item-title-features, .item-title-seller{
+    font-weight: 400;
+    font-size: 20px;
+    color: rgba(0,0,0,.9);
+  }
+  .item-specs-li{
+    margin-top: 24px;
+    padding-left: 15px;
+    font-weight: 400;
+    color: rgba(0,0,0,.9);
+    font-size: 16px;
+  }
+  .item-title-description{
+    font-weight: 400;
+    font-size: 20px;
+    color: rgba(0,0,0,.9);
+    margin-bottom: 24px;
+  }
+
+/* Common title */
+.item-title-component{
+  font-weight: 400;
+  font-size: 20px;
+  color: rgba(0,0,0,.9);
+}
+
 
   .product-detail-title{  
     font-size: 16px; 
     font-weight: 400;
     padding-bottom: 0;
-  }
-  
+  } 
 
   .product-description-p{
     font-size: 14px;
@@ -173,63 +234,13 @@
     "title"
     "image"
     "price"
-    "specs"
     "buttons"
+    "specs"
+    "features"
     "related"
     "info"
-    "features"
     "description"
-    "payments"
-     ;
+    "payments" 
   }
-}
-  
-
- /* .wrapper{
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  grid-template-rows: repeat(3,120px);
-  column-gap: 10px;
-  row-gap: 10px;
- }
-
-.item-img{
-  grid-area: 1 / 1 / 4 /2;
-  border: 3px solid tomato;
-}
-.item-title{
-  grid-area: 1/ 2 / 2 / 2;
-  border: 3px solid blue; 
-}
-.item-price{
-  grid-area: 2 / 2 / 2 / 2;
-  border: 3px solid green;
-}
-.item-buttons{
-  grid-area: 1 / 3 / 4 / 3;
-  border: 3px solid gray;
-}
-.item-specs{
-  grid-area: 3 / 2 / 3 / 2;
-  border: 3px solid red;
-}
-.item-related{
-  grid-area: 4 / 1 / 5 / 3;
-  border: 3px solid gray;
-}
-.item-features{
-  grid-area: 7 / 1 / 10 / 3;
-  border: 3px solid blue;
-}
-.item-description{
-  grid-area: 11 / 1 / 13 / 3;
-  border: 3px solid rgb(172, 14, 141);
-}
-.item-seller{
-  grid-area: 4 / 3 / 8 / 3;
-  border: 3px solid red;
-}
-.item-payments{
-  grid-area: 9 / 3 / 13 / 3;
-  border: 3px solid tomato;
-} */
+} 
+ 

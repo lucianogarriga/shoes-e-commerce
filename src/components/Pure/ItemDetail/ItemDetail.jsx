@@ -51,21 +51,47 @@ const ItemDetail = ({ data }) => {
               <ItemSell />
               <ItemCount stock={5} initial={1} onAdd={onAdd} />
             </div>
-            {/* <div className="item-specs">Lo que tenés que saber de este producto</div> */}
+            <div className="item-specs">
+              <div>
+                <h2 className="item-specs-title">
+                  Lo que tenés que saber de este producto
+                </h2>
+              </div>
+              <div>
+                <ul>
+                  <li className="item-specs-li">
+                    Zapatillas Nike Phantom GT2 Pro FG color marrón{" "}
+                  </li>
+                  <li className="item-specs-li">Talles 38 a 46 </li>
+                </ul>
+              </div>
+            </div>
             <div className="item-features">
-            <hr/>
-              <h2  className="item-title-description">Características de Nike Phantom GT2 Pro FG</h2>
-              <p>Talle: 40 / 42 / 44 / 46</p>
-            
-            </div> 
+              <hr />
+              <div>
+                <h2 className="item-title-features">
+                  Características de Nike Phantom GT2 Pro FG
+                </h2>
+              </div>
+              <div className="item-features-paragraph">
+                <p>Talle: 38 / 40 / 42 / 44 / 46</p>
+              </div>
+            </div>
             {/* <div className="item-related">7 RELATED</div> */}
-            <div className="item-seller">Información del vendedor</div>
+            <div className="item-seller">
+              <hr />
+              <h2 className="item-title-seller">
+                Información sobre el vendedor
+              </h2>
+            </div>
             <div className="item-description">
-            <hr/>
-              <h2  className="item-title-description">Descripción</h2>
+              <hr />
+              <h2 className="item-title-description">Descripción</h2>
               <p className="product-description-p">{data.description}</p>
             </div>
-            <div className="item-payments">Medios de pago </div>
+            <div className="item-payments">
+              <h2 className="item-title-component">Medios de pago</h2>{" "}
+            </div>
           </>
         )}
       </div>

@@ -1,7 +1,7 @@
 .item-count-container, .item-count-stock{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: baseline; 
 }  
 .item-count-products{
     display: flex;
@@ -9,10 +9,8 @@
     margin: 10px;
     padding: 10px;
 }
-.item-count-quantity {
-    display: flex; 
-    align-items: baseline;
-    justify-content: flex-start;
+.item-count-quantity { 
+    display: flex;
     text-align: left;
     font-size: 14px;
 }
@@ -38,5 +36,10 @@
     .item-count-stock{
         align-items: self-start; 
     }
- 
+    .item-count-cart-buttons{
+        display: block;
+    }
+    .btn {
+        width: 100%;
+    }
   }

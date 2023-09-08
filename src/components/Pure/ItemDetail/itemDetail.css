@@ -147,8 +147,13 @@
 
   .item-buttons, .item-seller{
     border: none;
-    margin: 12px 0px;
+    margin: 0px;
+    padding: 20px 0px;
   }
+  .item-features, .item-description{
+    padding: 0px 8px;
+  }
+
   .product-detail-title{  
     font-size: 16px; 
     font-weight: 400;

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"; 
+import React, { useEffect, useState } from "react";
 import productos from "../../../data/products.json";
 import ItemList from "../../Pure/ItemList/ItemList";
 import Subtitle from "../../Pure/Subtitle/Subtitle";
@@ -10,22 +10,23 @@ const ItemListContainer = () => {
 
   const { categoryId } = useParams();
 
+  const getData = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      setLoading(false);
+      resolve(productos);
+    }, 2000);
+  });
+
+  const setFilter = getData.then((res) =>
+    setData(res.filter((product) => product.category === categoryId))
+  );
+  const setCategoryData = getData.then((resolve) => {
+    setData(resolve);
+  });
+
   useEffect(() => {
-    const getData = new Promise((resolve, reject) => {
-      setTimeout(() => {
-        setLoading(false);
-        resolve(productos);
-      }, 2000);
-    });
-    if (categoryId) {
-      getData.then((res) =>
-        setData(res.filter((product) => product.category === categoryId))
-      );
-    } else {
-      getData.then((resolve) => {
-        setData(resolve);
-      });
-    }
+    getData;
+    categoryId ? setFilter : setCategoryData;
   }, [categoryId]);
 
   return (

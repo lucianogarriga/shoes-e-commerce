@@ -18,14 +18,14 @@ const ItemCount = ({ stock, initial, onAdd }) => {
 
   return (
     <div className="item-count-container">
-      <div className="item-count-stock">
-        
-        <div className="item-count-quantity">
-        <p className="count">Cantidad: <span className="item-quantity-selected"> {count} unidad</span></p>
+      <div className="item-count-quantity">
+        <p className="count">
+          Cantidad: 
+          <span className="item-quantity-selected"> {count} unidad</span>
+        </p>
         <p className="item-quantity-available"> ({stock} disponibles) </p>
-        </div>
-
       </div>
+
       {/* <div className="item-count-products">
         <button
           type="button"
@@ -47,14 +47,14 @@ const ItemCount = ({ stock, initial, onAdd }) => {
           disabled={count === 0 && count < stock}
           onClick={() => onAdd(count)}
           className="btn btn-primary"
-        > 
+        >
           Comprar ahora
         </button>
         <button
           disabled={count === 0 && count < stock}
           onClick={() => onAdd(count)}
           className="btn btn-outline-primary"
-        > 
+        >
           Agregar al carrito
         </button>
       </div>

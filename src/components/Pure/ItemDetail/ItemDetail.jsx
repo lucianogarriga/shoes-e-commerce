@@ -52,10 +52,16 @@ const ItemDetail = ({ data }) => {
               <ItemCount stock={5} initial={1} onAdd={onAdd} />
             </div>
             <div className="item-specs">Lo que tenés que saber de este producto</div>
-            <div className="item-features">6 FEATURES/CARACT</div>
-            <div className="item-related">7 RELATED</div>
+            <div className="item-features">
+            <hr/>
+              <h2  className="item-title-description">Características de Nike Phantom GT2 Pro FG</h2>
+              <p>Talle: 40 / 42 / 44 / 46</p>
+            
+            </div> 
+            {/* <div className="item-related">7 RELATED</div> */}
             <div className="item-seller">Información del vendedor</div>
             <div className="item-description">
+            <hr/>
               <h2  className="item-title-description">Descripción</h2>
               <p className="product-description-p">{data.description}</p>
             </div>

@@ -28,8 +28,7 @@
   grid-area: specs; 
 }
 .item-features{
-  grid-area: features;
-  border: 3px solid rgb(172, 14, 141);
+  grid-area: features; 
 }
 .item-related{
   grid-area: related;
@@ -51,7 +50,7 @@
 
 /* Containers */
 
-.item-description{
+.item-description, .item-features{
   font-weight: 300;
   line-height: 21.6px;
   padding: 0px 45px;
@@ -110,8 +109,7 @@
   color: #7c7b7b;
 }
  
-/* Item buttons */
-
+/* Item buttons */ 
 .item-buttons{
   border: 1px solid rgba(0,0,0,.1);
   border-radius: 8px;

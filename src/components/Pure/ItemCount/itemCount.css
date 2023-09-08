@@ -12,7 +12,8 @@
 .item-count-quantity {
     display: flex; 
     align-items: baseline;
-    justify-content: start;
+    justify-content: flex-start;
+    text-align: left;
     font-size: 14px;
 }
 .item-quantity-selected, .item-stock-text{
@@ -35,8 +36,7 @@
  
     /* TODO: font-size ItemCount buttons */
     .item-count-stock{
-        align-items: self-start;
-        
+        align-items: self-start; 
     }
  
   }

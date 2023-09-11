@@ -3,6 +3,7 @@ import "./itemDetail.css";
 import ItemCount from "../ItemCount/ItemCount";
 import ItemPrice from "./ItemPrice";
 import ItemSell from "./ItemSell";
+import ItemBenefits from "./ItemBenefits";
 
 const ItemDetail = ({ data }) => {
   const [loading, setLoading] = useState(true);
@@ -50,6 +51,7 @@ const ItemDetail = ({ data }) => {
             <div className="item-buttons">
               <ItemSell />
               <ItemCount stock={5} initial={1} onAdd={onAdd} />
+              <ItemBenefits/>
             </div>
             <div className="item-specs">
               <div>

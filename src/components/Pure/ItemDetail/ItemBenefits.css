@@ -1,0 +1,19 @@
+.item-benefits-container{
+    margin-top: 24px;
+}
+.item-benefits-1, .item-benefits-2{
+    margin-bottom: 16px;
+}
+.item-benefits-1, .item-benefits-2, 
+.item-benefits-3{    
+    font-size: 14px;
+    line-height: 1.3;
+    color: rgba(0,0,0,.55);
+}
+.item-benefits-link{
+    font-size: 14px;
+    font-weight: 400;
+}
+.item-benefits-link:hover{
+    color: #2968c8;
+}

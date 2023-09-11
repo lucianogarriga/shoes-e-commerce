@@ -4,6 +4,7 @@ import ItemCount from "../ItemCount/ItemCount";
 import ItemPrice from "./ItemPrice";
 import ItemSell from "./ItemSell";
 import ItemBenefits from "./ItemBenefits";
+import ItemSeller from "./ItemSeller";
 
 const ItemDetail = ({ data }) => {
   const [loading, setLoading] = useState(true);
@@ -29,19 +30,15 @@ const ItemDetail = ({ data }) => {
           </p>
         ) : (
           <>
-            <div className="item-title">
-              <div className="item-header">
+            <div className="item-title"> 
                 <span className="item-header-subtitle">
                   Nuevo | +5mil vendidos
                 </span>
-              </div>
-              <div>
-                <p className="product-detail-title">{data.name}</p>
-              </div>
+                <p className="product-detail-title">{data.name}</p> 
             </div>
             <div className="item-img">
               <img
-                className="product-detail-image"
+                className="item-detail-image"
                 src={data.pictureUrl}
                 alt={data.image}
               />
@@ -81,9 +78,7 @@ const ItemDetail = ({ data }) => {
             </div>
             {/* <div className="item-related">7 RELATED</div> */}
             <div className="item-seller">
-              <h2 className="item-title-seller">
-                Información sobre el vendedor
-              </h2>
+              <ItemSeller/>
             </div>
             <div className="item-description">
               <hr />

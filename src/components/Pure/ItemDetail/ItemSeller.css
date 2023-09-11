@@ -5,6 +5,22 @@
     width: 100%;
 } 
 
+
+.item-seller-list-description{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+
+.item-seller-description{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    padding: 0 5px;
+}
+
 @media screen and (max-width: 990px) {
     .item-title-seller{
         font-weight: 400;

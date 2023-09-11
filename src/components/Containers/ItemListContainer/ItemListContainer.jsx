@@ -25,8 +25,12 @@ const ItemListContainer = () => {
   });
 
   useEffect(() => {
-    getData;
-    categoryId ? setFilter : setCategoryData;
+    try {
+      getData;
+      categoryId ? setFilter : setCategoryData;
+    } catch (error) {
+      console.log(error);
+    }
   }, [categoryId]);
 
   return (
@@ -34,7 +38,7 @@ const ItemListContainer = () => {
       <div className="item-list-body">
         <Subtitle text="Ofertas" />
         <p className="loading-text">
-          {loading ? "Cargando lista de productos..." : null}
+          {loading && "Cargando lista de productos..."}
         </p>
         <ItemList data={data} />
       </div>
@@ -43,3 +47,8 @@ const ItemListContainer = () => {
 };
 
 export default ItemListContainer;
+
+
+
+
+

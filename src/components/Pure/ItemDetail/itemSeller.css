@@ -4,8 +4,13 @@
     margin-bottom: 24px;
     width: 100%;
 } 
+.item-seller-info{
+    margin-bottom: 20px;
+}
 
-
+.item-seller-reputation-info{
+    margin-top: 16px;
+}
 .item-seller-list-description{
     display: flex;
     flex-direction: row;
@@ -19,6 +24,18 @@
     flex-direction: column;
     font-size: 12px;
     padding: 0 5px;
+    line-height: 1;
+    text-align: center;
+}
+
+.item-status-title{
+    font-weight: 600;
+    color: #00a650;
+    font-size: 16px;
+}
+.item-status-subtitle{
+    color: rgba(0,0,0,.55);
+    font-size: 14px;
 }
 
 @media screen and (max-width: 990px) {

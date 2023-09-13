@@ -3,6 +3,7 @@ import "./itemCount.css";
 
 const ItemCount = ({ stock, initial, onAdd }) => {
   const [count, setCount] = useState(initial); 
+  const [goToCart, setGoToCart] = useState();
  
   useEffect(() => {
     setCount(parseInt(initial));
@@ -26,17 +27,20 @@ const ItemCount = ({ stock, initial, onAdd }) => {
         <p className="item-quantity-available"> ({stock} disponibles) </p>
       </div>
  
-      <div className="item-count-cart-buttons">
+      <div className="item-count-cart-buttons full-width-btn">
         <button
           disabled={count === 0 && count < stock}
           onClick={() => onAdd(count)}
-          className="btn btn-primary" >
+          className="btn btn-primary full-width-btn" >
           Comprar ahora
         </button>
+        {/* <span className="andes-button__content"> 
+          Comprar ahora
+          </span> */}
         <button
           disabled={count === 0 && count < stock}
           onClick={() => onAdd(count)}
-          className="btn btn-outline-primary"
+          className="btn btn-outline-primary full-width-btn"
         >
           Agregar al carrito
         </button>

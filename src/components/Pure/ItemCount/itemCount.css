@@ -14,7 +14,7 @@
     text-align: left;
     font-size: 14px;
 }
-.item-quantity-selected, .item-stock-text{
+.item-stock-text{
     font-weight: 600;
 }
 .item-quantity-available{

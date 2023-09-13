@@ -10,22 +10,27 @@ const ItemDetailContainer = () => {
 
   const { detailId } = useParams();
 
-  useEffect(() => {
-    const getData = new Promise((resolve) => {
-      setTimeout(() => { 
-        // Al resolverse, debe traer el objeto
-        resolve(productos);
-      }, 1000);
+  const getData = new Promise((resolve) => {
+    setTimeout(() => { 
+      // Al resolverse, debe traer el objeto
+      resolve(productos);
+    }, 1000);
+  });
+
+  const dataDetailId = () => {
+    getData.then((res) => {
+      setData(res.find((product) => product.id === parseInt(detailId)));
     });
-    if (detailId) {
-      getData.then((res) => {
-        setData(res.find((product) => product.id === parseInt(detailId)));
-      });
-    } else {
-      getData.then((res) => {
-        setData(res);
-      });
-    }
+  }
+  const dataDetailNone = () => {
+    getData.then((res) => {
+      setData(res);
+    });
+  }
+
+  useEffect(() => {
+    getData;
+    detailId ? dataDetailId() : dataDetailNone() 
   }, [detailId]);
 
   return (

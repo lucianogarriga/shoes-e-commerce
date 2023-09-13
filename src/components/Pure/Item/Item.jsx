@@ -2,8 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Item = ({ item }) => {
-
-
+ 
   return (
     <div className="item">
       <Link to={`/detail/${item.id}`} className="card">
@@ -16,8 +15,7 @@ const Item = ({ item }) => {
             <span className="card-free">Envío gratis</span>
             <p className="card-title">{item.name}</p> 
           </div>
-          <div>
-          {/* <ItemCount stock={5} initial={1} onAdd={onAdd} /> */}
+          <div> 
           </div>
         </div>
       </Link>

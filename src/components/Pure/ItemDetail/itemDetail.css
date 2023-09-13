@@ -5,8 +5,7 @@
   grid-template-areas: 
   "image title buttons"
   "image price buttons"
-  "image specs buttons"
-  "related related info"
+  "image specs buttons" 
   "features features info"
   "description description payments" 
   ;

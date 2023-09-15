@@ -27,7 +27,7 @@ const ItemSeller = () => {
             <li className="item-seller-description">
             <strong className="item-sales">
                 <div>
-                    <img src="../../../assets/message-positive.svg" />
+                    <img src="https://http2.mlstatic.com/frontend-assets/vpp-frontend/message-positive.svg" />
                 </div>
             </strong>
               <p className="item-sales-description">Brinda buena atención</p>
@@ -35,7 +35,7 @@ const ItemSeller = () => {
             <li className="item-seller-description">
             <strong className="item-sales">
                 <div>
-                    <img src="../../../assets/time-positive.svg" />
+                    <img src="https://http2.mlstatic.com/frontend-assets/vpp-frontend/time-positive.svg" />
                 </div>
             </strong>
               <p className="item-sales-description">

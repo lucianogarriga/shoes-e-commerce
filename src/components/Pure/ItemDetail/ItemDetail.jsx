@@ -8,10 +8,7 @@ import ItemSeller from "./ItemSeller";
 
 const ItemDetail = ({ data }) => {
   const [loading, setLoading] = useState(true);
-
-  const onAdd = (count) => {
-    console.log(`Agregaste ${count} productos`);
-  };
+  
 
   useEffect(() => {
     const loadingText = new Promise((resolve) => {
@@ -47,7 +44,7 @@ const ItemDetail = ({ data }) => {
 
             <div className="item-buttons">
               <ItemSell />
-              <ItemCount stock={5} initial={1} onAdd={onAdd} />
+              <ItemCount stock={5} initial={1} />
               <ItemBenefits/>
             </div>
             <div className="item-specs">

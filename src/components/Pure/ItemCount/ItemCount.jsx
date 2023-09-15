@@ -1,49 +1,63 @@
 import React, { useEffect, useState } from "react";
 import "./itemCount.css";
+import { Link } from "react-router-dom";
 
-const ItemCount = ({ stock, initial, onAdd }) => {
-  const [count, setCount] = useState(initial); 
-  const [goToCart, setGoToCart] = useState();
- 
+const ItemCount = ({ stock, initial }) => {
+  const [count, setCount] = useState(initial);
+  const [goToCart, setGoToCart] = useState(false);
+
   useEffect(() => {
     setCount(parseInt(initial));
   }, [initial]);
-  
 
+  const onAdd = (count) => {
+    setGoToCart(true);
+  }; 
   return (
     <div className="item-count-container">
       <div className="item-count-quantity">
         <p className="count">
-          Cantidad:  
+          Cantidad:
           <select value={count} onChange={(e) => setCount(e.target.value)}>
-          {Array.from({length: stock - initial + 1}, (_, index) => (
-            <option key={initial + index} value={initial + index}> 
-              {initial + index} {initial + index === 1 ? "unidad" : "unidades"}
-            </option>
-          ))}
+            {Array.from({ length: stock - initial + 1 }, (_, index) => (
+              <option key={initial + index} value={initial + index}>
+                {initial + index}{" "}
+                {initial + index === 1 ? "unidad" : "unidades"}
+              </option>
+            ))}
           </select>
-          
         </p>
         <p className="item-quantity-available"> ({stock} disponibles) </p>
       </div>
- 
+
       <div className="item-count-cart-buttons full-width-btn">
-        <button
-          disabled={count === 0 && count < stock}
-          onClick={() => onAdd(count)}
-          className="btn btn-primary full-width-btn" >
-          Comprar ahora
-        </button>
-        {/* <span className="andes-button__content"> 
-          Comprar ahora
-          </span> */}
-        <button
-          disabled={count === 0 && count < stock}
-          onClick={() => onAdd(count)}
-          className="btn btn-outline-primary full-width-btn"
-        >
-          Agregar al carrito
-        </button>
+        {goToCart ? (
+          <Link to="/cart"> 
+            <button 
+              onClick={() => console.log("Ir al carrito")}
+              className="btn btn-primary full-width-btn" >  
+              Ver carrito
+            </button>
+          </Link>
+        ) : (
+          <>
+          {/* TODO: Modificar boton Comprar Ahora */}
+            <button
+              disabled={count === 0 && count < stock}
+              onClick={() => onAdd(count)}
+              className="btn btn-primary full-width-btn"
+            >
+              Comprar ahora
+            </button>
+            <button
+              disabled={count === 0 && count < stock}
+              onClick={() => onAdd(count)}
+              className="btn btn-outline-primary full-width-btn"
+            >
+              Agregar al carrito
+            </button>
+          </>
+        )}
       </div>
     </div>
   );

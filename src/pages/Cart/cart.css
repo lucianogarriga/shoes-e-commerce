@@ -1,0 +1,42 @@
+.cart-title{
+    text-align: center; 
+    padding: 10px 0px 0px;
+}
+.cards-container{
+    display: grid;
+    gap: 32px;
+    grid-template-columns: calc(100% - 392px) auto;
+    height: auto;
+    max-width: 1200px;
+    min-height: unset;
+}
+
+.cards-double-scroll{
+    margin: auto;
+    max-width: 1200px;
+    width: 100%;
+    min-height: calc(100vh - 90px);
+}
+
+@media screen and (max-width: 990px) {
+  
+    .cards-double-scroll{
+        background-color: #ededed;
+    }
+    .cards-container{
+        display: flex;
+        flex-direction: column;
+        min-width: 270px;
+        min-height: calc(100vh - 90px);
+        position: relative;
+    }
+    .cards-list{
+        padding: 8px 0px;
+    }
+    .cards-container, .card-wrapper ,.cards-double-scroll{
+        padding: 8px 16px;  
+    }
+    .card-wrapper{
+        border: 2px solid red;
+    }
+}

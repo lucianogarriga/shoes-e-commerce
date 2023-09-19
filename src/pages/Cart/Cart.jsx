@@ -4,18 +4,18 @@ import "./cart.css";
 const Cart = () => {
   return (
     <div className="cards-double-scroll">
-      <h1 className="cart-title">Cart</h1>
+      {/* <h1 className="cart-title">Carrito</h1> */}
       <div className="cards-container">
         <div className="cards-list">
           <div className="card-wrapper">
             <div className="andes-card__header">
               <div className="ander-card__header-title">SHOES_MARKET</div>
             </div>
-            <hr/>
+            <div className="bf-ui-separator"></div>
             <section className="item-row">
               <article className="item-cart">
                 <div className="item-cart__asset">
-                  <img src="https://http2.mlstatic.com/porta-patente-fender-eliminator-cf-moto-400-nk-650-S_617503-MLA48849744349_012022-R.jpg" />
+                  <img src="https://www.digitalsport.com.ar/files/products/60c75a4fa0d71-559013-500x500.jpg" />
                 </div>
                 <div className="item-cart__info">
                   <div className="item-title">
@@ -35,12 +35,34 @@ const Cart = () => {
                   </div>
                 </div>
               </article>
-              <div>...</div>
-              <div>1 u.</div>
-              <div>$15.603</div>
+              {/* <div>...</div> */}
+              <div className="quantity-selector-mobile-container">
+                <div className="quantity-selector-mobile">
+                  <span className="bf-ui-rich-text">1 u.</span>
+                  <svg
+                    aria-hidden="true"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="#3483fa"
+                  >
+                    <path
+                      d="M4.40175 5.35519L7.99814 8.95157L11.5983 5.35144L12.4468 6.19997L7.99814 10.6486L3.55322 6.20371L4.40175 5.35519Z"
+                      fill="#3483fa"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div className="item-price-container">
+                <div className="item-price">
+                  <span className="bf-ui-rich-price">
+                  $15.603
+                  </span>
+                </div>
+              </div>
             </section>
 
-            <hr/>
+            <div className="bf-ui-separator"></div>
             <div className="andes-card__footer">
               <div className="ticket-row">
                 <div>

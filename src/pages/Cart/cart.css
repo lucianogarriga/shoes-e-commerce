@@ -18,7 +18,7 @@
     min-height: calc(100vh - 90px);
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 790px) {
   
     .cards-double-scroll{
         background-color: #ededed;
@@ -32,11 +32,53 @@
     }
     .cards-list{
         padding: 8px 0px;
+        margin: 0 40px;
     }
-    .cards-container, .card-wrapper ,.cards-double-scroll{
+    .cards-container, .card-wrapper  {
         padding: 8px 16px;  
     }
-    .card-wrapper{
-        border: 2px solid red;
+    .card-wrapper{ 
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        padding: 0;
+        border-radius: 6px;
+        box-shadow: 0 1px 2px 0 rgba(0,0,0,.12);
+    }
+    .andes-card__header{
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        padding: 16px;
+    }
+    .andes-card__footer{
+        background-color: #f5f5f5;
+        padding: 0;
+    }
+    .ticket-row{
+        display: flex;
+        justify-content: space-between;
+        background-color: #fff;
+        margin-bottom: 0;
+        padding: 12px 16px;
+    }
+    .ticket-row__right-column{
+        margin-left: auto;
+        text-align: right;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    .ticket-row__primary-text{
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        font-size: 16px;
+        justify-content: flex-end;
+        line-height: 1.25;
+    }
+    .rich-text--success{
+        font-weight: 600;
+        color: #00a650;
+        font-size: 14px;
     }
 }

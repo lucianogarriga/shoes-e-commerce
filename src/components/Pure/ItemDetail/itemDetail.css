@@ -1,12 +1,14 @@
  
 .product-detail-container{
   display: grid;
-  grid-template-columns: 3fr 3fr 2fr;
+  grid-template-columns: 3fr 3fr 3fr;
   grid-template-areas: 
   "image title buttons"
   "image price buttons"
-  "image specs buttons" 
-  "features features info"
+  "image specs buttons"  
+  "features features buttons" 
+  "features features info" 
+  "description description info"
   "description description payments" 
   ;
   grid-gap: 2px;
@@ -117,7 +119,7 @@
 .item-buttons{
   border: 1px solid rgba(0,0,0,.1);
   border-radius: 8px;
-  padding: 25px 16px;
+  padding: 20px 16px 2px;
   margin: 12px; 
 }
 

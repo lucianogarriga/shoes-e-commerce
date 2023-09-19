@@ -17,8 +17,11 @@
     width: 100%;
     min-height: calc(100vh - 90px);
 }
-
-@media screen and (max-width: 790px) {
+hr{
+    padding: 0;
+    margin: 0;
+}
+@media screen and (max-width: 890px) {
   
     .cards-double-scroll{
         background-color: #ededed;
@@ -45,11 +48,89 @@
         padding: 0;
         box-shadow: 0 1px 2px 0 rgba(0,0,0,.12);
     } 
+    /* HEADER */
     .andes-card__header{
+        display: flex;
         border-top-left-radius: 6px;
         border-top-right-radius: 6px;
         padding: 16px;
     }
+    .ander-card__header-title{
+        display: flex;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20px;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* ITEM-ROW */
+    .item-row{ 
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: auto;
+        padding: 16px;
+        background: #fff;
+        position: relative;
+        width: 100%;
+    }
+    .item-cart{
+        padding: 0;
+        display: flex;
+        width: calc(100% - 32px);
+    }
+    .item-cart__asset{
+        margin-right: 12px;
+        height: 48px;
+        width: 48px;
+    }
+    .item-cart__asset img{
+        height: 48px;
+        width: 48px;
+    }
+    .item-cart__info{
+        margin-bottom: 16px;
+        overflow: hidden;
+    }
+    .item-title{
+        font-size: 14px;
+        line-height: 1.25;
+    }
+    .rich-text--small{
+        font-size: 14px;
+        display: inline-block;
+        max-width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .item-cart__actions{
+        line-height: 18px; 
+    }
+    .link-container--horizontal{
+        margin-top: 12px;
+        padding: 0;
+        display: flex; 
+    }
+    .bf-ui-link{
+        margin-right: 8px;
+        font-weight: 400;
+        color: #3483fa;
+        align-items: center;
+        cursor: pointer;
+        display: inline-flex;
+        font-size: 16px;
+        position: relative;
+        transition: .15s ease-in-out;
+    }
+    .bf-ui-rich-text{
+        font-size: 12px;
+        font-weight: 600;
+        white-space: pre-wrap;
+        width: fit-content;
+    }
+
+    /* FOOTER */
     .andes-card__footer{
         background-color: #f5f5f5;
         padding: 0;

@@ -8,29 +8,39 @@ const Cart = () => {
       <div className="cards-container">
         <div className="cards-list">
           <div className="card-wrapper">
-            <div className="andes-card__header">Nombre del Vendedor</div>
-
+            <div className="andes-card__header">
+              <div className="ander-card__header-title">SHOES_MARKET</div>
+            </div>
+            <hr/>
             <section className="item-row">
-              <article>
-                <div>Img</div>
-                <div>
-                  <div>
-                    <span>Item cart info</span>
+              <article className="item-cart">
+                <div className="item-cart__asset">
+                  <img src="https://http2.mlstatic.com/porta-patente-fender-eliminator-cf-moto-400-nk-650-S_617503-MLA48849744349_012022-R.jpg" />
+                </div>
+                <div className="item-cart__info">
+                  <div className="item-title">
+                    <span className="rich-text--small">
+                      Detalle del producto en el carrito
+                    </span>
                   </div>
-                  <div>
-                    <span>
-                      <a>Eliminar</a>
-                    </span>
-                    <span>
-                      <a>Guardar</a>
-                    </span>
+                  <div className="item-cart__actions">
+                    <div className="link-container--horizontal">
+                      <span className="bf-ui-link">
+                        <span className="bf-ui-rich-text">Eliminar</span>
+                      </span>
+                      <span className="bf-ui-link">
+                        <span className="bf-ui-rich-text">Guardar</span>
+                      </span>
+                    </div>
                   </div>
                 </div>
               </article>
+              <div>...</div>
               <div>1 u.</div>
               <div>$15.603</div>
             </section>
 
+            <hr/>
             <div className="andes-card__footer">
               <div className="ticket-row">
                 <div>

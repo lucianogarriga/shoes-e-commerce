@@ -10,9 +10,11 @@ const Cart = () => {
           <div className="card-wrapper">
             <div className="andes-card">
               <div className="andes-card__header">
-                <div className="ander-card__header-title">SHOES_MARKET</div>
+                <div className="ander-card__header-title">
+                SHOES_MARKET</div>
               </div>
               <div className="bf-ui-separator"></div>
+              
               <section className="item-row">
                 <article className="item-cart">
                   <div className="item-cart__asset">
@@ -83,14 +85,14 @@ const Cart = () => {
           </div>
         </div>
 
-        {/* <div className="price-box-container">
+        <div className="price-box-container">
           <div className="expandable-footer"></div>
           <button className="to-checkout">
             <span className="andes-button__content">
               <span className="andes-button__text">Continuar compra</span>
             </span>
           </button>
-        </div> */}
+        </div>
       </div>
     </div>
   );

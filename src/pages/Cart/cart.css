@@ -1,51 +1,67 @@
-.cart-title{
-    text-align: center; 
-    padding: 10px 0px 0px;
+.cards-double-scroll{
+    background-color: #ededed;
+    margin: auto;
+    max-width: 1200px;
+    width: 100%;
+    min-height: auto;
+} 
+.cards-list{
+    padding-bottom: 0;
+    padding-top: 0;
+    background-color: #ededed;
 }
 .cards-container{
     display: grid;
     gap: 32px;
     grid-template-columns: calc(100% - 392px) auto;
     height: auto;
-    max-width: 1200px;
     min-height: unset;
+    max-width: 1200px;
+    min-width: 270px;
+    margin: 32px 40px 44px;
+}
+.card-wrapper{
+    padding: 0 0 16px;
+}
+.andes-card{
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.12);
+}
+.andes-card__header{
+    padding: 20px 24px; 
+}
+.ander-card__header-title{
+    color: rgba(0,0,0,.9);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    margin: 0;
+    padding: 0;
 }
 
-.cards-double-scroll{
-    margin: auto;
-    max-width: 1200px;
-    width: 100%;
-    min-height: calc(100vh - 90px);
-}
-hr{
-    padding: 0;
-    margin: 0;
-}
-@media screen and (max-width: 890px) {
-  
-    .cards-double-scroll{
-        background-color: #ededed;
-    }
+@media screen and (max-width: 790px) {
+   
     .cards-container{
         display: flex;
         flex-direction: column;
-        min-width: 270px;
-        min-height: calc(100vh - 90px);
+        min-width: 270px; 
         position: relative;
     }
     .cards-list{
-        padding: 8px 0px;
-        margin: 0 40px;
+        padding: 8px 0px; 
     }
-    .cards-container, .card-wrapper  {
+    .cards-container {
         padding: 8px 16px;   
     }
     .card-wrapper{ 
         display: flex;
         flex-direction: column;
         border-radius: 6px;
-        background-color: #fff;
-        padding: 0;
+        background-color: #fff; 
         box-shadow: 0 1px 2px 0 rgba(0,0,0,.12);
     } 
     /* HEADER */
@@ -73,7 +89,7 @@ hr{
         background: #fff;
         position: relative;
         width: 100%;
-    }
+    } 
     .item-cart{
         padding: 0;
         display: flex;
@@ -164,11 +180,9 @@ hr{
 
     /* ITEM-PRICE-CONTAINER */
     .item-price-container{
-        align-items: center;
-        line-height: 18px;
+        align-items: center; 
         margin: 0 0 0 auto;
-        text-align: right;
-        gap: 4px;
+        text-align: right; 
     }
     .item-price{
         display: flex;
@@ -178,8 +192,11 @@ hr{
     .bf-ui-rich-price{
         display: inline-flex;
         align-items: flex-end;
-        font-size: 18px;
-
+        font-size: 18px; 
+    }
+    .bf-ui-price-small{
+        align-self: flex-end;
+        margin-top: 6px;
     }
 
     /* FOOTER */

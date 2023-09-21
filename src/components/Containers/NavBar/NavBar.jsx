@@ -12,6 +12,12 @@ const NavBar = () => {
           <NavLink to="/" className="navbar-link">
             Shoes Market
           </NavLink>
+          {/* TODO: HACER NAVBAR COMO MELI */}
+
+          {/* <form className="nav-search" role="search">
+            <label></label>
+            <input></input>
+          </form> */}
           <button
             className="navbar-toggler"
             type="button"
@@ -29,7 +35,7 @@ const NavBar = () => {
                 className="form-control mr-sm-2"
                 type="search"
                 placeholder="Buscar productos, marcas y más"
-                aria-label="Search" 
+                aria-label="Search"
               ></input>
               <button className="btn my-2 my-sm-0" type="submit">
                 <i className="bi bi-search"></i>

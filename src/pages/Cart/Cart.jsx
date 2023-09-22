@@ -39,8 +39,8 @@ const Cart = () => {
                   </div>
                 </article>
                 {/* <div>...</div> */}
-                <div className="quantity-selector-mobile-container">
-                  <div className="quantity-selector-mobile">
+                <div className="quantity-selector-container">
+                  <div className="quantity-selector">
                     <span className="bf-ui-rich-text">1 u.</span>
                     <svg
                       aria-hidden="true"

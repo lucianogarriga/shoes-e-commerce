@@ -22,7 +22,7 @@
     padding: 26px 0px;
 }
 .card-wrapper{
-    padding: 0 0 16px;
+    padding: 0;
 }
 .andes-card{
     background-color: #fff;
@@ -118,20 +118,28 @@
     display: inline-flex;
 }
 
-@media screen and (max-width: 790px) {
+/* Quantity Selector */
+.quantity-selector-container{
+display: inline-flex;
+flex-flow: column;
+align-self: flex-start;
+margin-left: 87px;
+width: auto;
+}
+
+@media screen and (max-width: 990px) {
    
     .cards-container{
         display: flex;
         flex-direction: column;
         min-width: 270px; 
         position: relative;
+        margin: 0;
+        padding: 8px 16px;   
     }
     .cards-list{
         padding: 8px 0px; 
-    }
-    .cards-container {
-        padding: 8px 16px;   
-    }
+    } 
     .card-wrapper{ 
         display: flex;
         flex-direction: column;
@@ -223,7 +231,7 @@
     }
 
     /* QUANTITY CONTAINER */
-    .quantity-selector-mobile-container{
+    .quantity-selector-container{
         display: flex;
         align-items: flex-start;
         justify-content: flex-end;
@@ -231,7 +239,7 @@
         min-width: 115px;
         width: auto; 
     }
-    .quantity-selector-mobile{
+    .quantity-selector{
         height: auto;
         justify-content: space-between;
         line-height: 18px;

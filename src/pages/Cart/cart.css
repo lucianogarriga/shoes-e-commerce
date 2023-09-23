@@ -18,11 +18,11 @@
     min-height: unset;
     max-width: 1200px;
     min-width: 270px;
-    margin: 0px 40px 44px;
+    margin: 0px 0px 44px;
     padding: 26px 0px;
 }
 .card-wrapper{
-    padding: 0;
+    padding: 0 0 16px;
 }
 .andes-card{
     background-color: #fff;
@@ -118,28 +118,20 @@
     display: inline-flex;
 }
 
-/* Quantity Selector */
-.quantity-selector-container{
-display: inline-flex;
-flex-flow: column;
-align-self: flex-start;
-margin-left: 87px;
-width: auto;
-}
-
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 790px) {
    
     .cards-container{
         display: flex;
         flex-direction: column;
         min-width: 270px; 
         position: relative;
-        margin: 0;
-        padding: 8px 16px;   
     }
     .cards-list{
         padding: 8px 0px; 
-    } 
+    }
+    .cards-container {
+        padding: 8px 16px;   
+    }
     .card-wrapper{ 
         display: flex;
         flex-direction: column;
@@ -231,7 +223,7 @@ width: auto;
     }
 
     /* QUANTITY CONTAINER */
-    .quantity-selector-container{
+    .quantity-selector-mobile-container{
         display: flex;
         align-items: flex-start;
         justify-content: flex-end;
@@ -239,7 +231,7 @@ width: auto;
         min-width: 115px;
         width: auto; 
     }
-    .quantity-selector{
+    .quantity-selector-mobile{
         height: auto;
         justify-content: space-between;
         line-height: 18px;

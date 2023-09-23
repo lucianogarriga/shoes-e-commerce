@@ -6,6 +6,10 @@
     "price": 54000,
     "stock": 3, 
     "category": "zapatillas",
+    "specs1": "Zapatillas Nike Phantom GT2 Pro FG",
+    "specs2": "Talles 38 a 46",
+    "specs3": "Color: Marrón",
+    "specs4": "Made in: Indonesia",
     "pictureUrl": "https://www.digitalsport.com.ar/files/products/60c75a4fa0d71-559013-500x500.jpg"
   },
   {
@@ -15,6 +19,10 @@
     "price": 49500,
     "stock": 5, 
     "category": "zapatillas",
+    "specs1": "Zapatillas Adidas Originals Forum Low",
+    "specs2": "Talles 39 a 43",
+    "specs3": "Color: Blanco con Azul",
+    "specs4": "Made in: Indonesia",
     "pictureUrl": "https://celadasa.vtexassets.com/arquivos/ids/206531-800-auto?v=637847632407130000&width=800&height=auto&aspect=true"
   },
   {
@@ -24,6 +32,10 @@
     "price": 52500,
     "stock": 4, 
     "category": "zapatillas",
+    "specs1": "Puma Trinomic Compression XS 500",
+    "specs2": "Talles 38 a 46",
+    "specs3": "Color: Blanco, Azul, Gris, Rojo, Negro",
+    "specs4": "Made in: Indonesia",
     "pictureUrl": "https://i.ebayimg.com/images/g/E8oAAOSwKQNfO6K1/s-l1200.jpg"
   },
   {
@@ -33,6 +45,10 @@
     "price": 38999,
     "stock": 5, 
     "category": "zapatillas",
+    "specs1": "Zapatillas Puma Amare Running Black",
+    "specs2": "Talles 39 a 44",
+    "specs3": "Color: Negro y Blanco",
+    "specs4": "Made in: Indonesia",
     "pictureUrl": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/376209/20/sv01/fnd/THA/fmt/png/Amare-Running-Shoes"
   },
   {
@@ -42,6 +58,10 @@
     "price": 84000,
     "stock": 6, 
     "category": "botines",
+    "specs1": "Botines Nike Phantom GT2 Pro FG",
+    "specs2": "Talles 36 a 43",
+    "specs3": "Color: Celeste, Negro, Amarillo y Naranja",
+    "specs4": "Made in: Indonesia",
     "pictureUrl": "https://www.tradeinn.com/f/13883/138839191/nike-botas-futbol-phantom-gt2-pro-fg.jpg"
   },
   {
@@ -51,6 +71,10 @@
     "price": 79500,
     "stock": 3, 
     "category": "botines",
+    "specs1": "Zapatillas Nike Phantom GT2 Pro FG",
+    "specs2": "Talles 36 a 41",
+    "specs3": "Color: Blanco, Rojo, Amarillo y Negro",
+    "specs4": "Made in: Indonesia",
     "pictureUrl": "https://www.tradeinn.com/f/13812/138126162/nike-botas-futbol-phantom-gt2-pro-fg.jpg"
   },
   {
@@ -60,6 +84,10 @@
     "price": 92500,
     "stock": 4, 
     "category": "botines",
+    "specs1": "Botines Adidas X SpeedPortal.1 FG",
+    "specs2": "Talles 40 a 45",
+    "specs3": "Color: Gris, Negro, Azul, Amarillo, Rojo, Verde",
+    "specs4": "Made in: Indonesia",
     "pictureUrl": "https://images.media-arocam.com/wObpezNkvrQKzk0hYLWthedLP-4=/fit-in/450x450/W29265/SKW/MyvsB2Mv_SKW.png"
   },
   {
@@ -69,6 +97,10 @@
     "price": 98999,
     "stock": 5, 
     "category": "botines",
+    "specs1": "Botines Adidas X SpeedFlow + FIRM GROUND",
+    "specs2": "Talles 38 a 46",
+    "specs3": "Color: Gris, Naranja, Amarillo",
+    "specs4": "Made in: Indonesia",
     "pictureUrl": "https://soccerzoneusa.com/cdn/shop/products/FY6866_1200x.jpg?v=1631830991"
   }
 ]

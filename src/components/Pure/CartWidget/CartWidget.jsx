@@ -1,10 +1,9 @@
-import React from 'react'; 
+import React from 'react';
 
-const CartWidget = () => { 
-
+const CartWidget = () => {
     return (
         <>
-          <i className="bi bi-cart"> </i> 
+          <i class="bi bi-cart"> </i> 
         </>
     );
 }

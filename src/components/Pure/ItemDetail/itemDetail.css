@@ -5,8 +5,7 @@
   grid-template-areas: 
   "image title buttons"
   "image price buttons"
-  "image specs buttons"  
-  "features features buttons" 
+  "image specs buttons"   
   "features features info" 
   "description description info"
   "description description payments" 
@@ -47,6 +46,7 @@
 }
  
 
+
 /* Item IMG */
 .item-img{
   margin: 24px 0 0;
@@ -59,7 +59,10 @@
 
 
 /* Containers */
-
+.container-card{ 
+  max-width: 990px;
+  margin: 0 auto;
+}
 .item-description, .item-features{
   font-weight: 300;
   line-height: 21.6px;
@@ -177,11 +180,10 @@
   font-weight: 400;
   padding: 24px 0px ;
 }
-
+ 
 
 /* Item Payments */
  
-
 @media screen and (max-width: 990px) {
  
   .item-title,  
@@ -227,14 +229,12 @@
     margin-bottom: 24px;
   }
 
-/* Common title */
-.item-title-component{
-  font-weight: 400;
-  font-size: 20px;
-  color: rgba(0,0,0,.9);
-}
-
-
+  /* Common title */
+  .item-title-component{
+    font-weight: 400;
+    font-size: 20px;
+    color: rgba(0,0,0,.9);
+  } 
   .product-detail-title{  
     font-size: 16px; 
     font-weight: 400;
@@ -248,6 +248,7 @@
     width: 100%; 
   }
   .product-detail-container {
+    padding: 0 10px;
     grid-template-columns: 1fr;
     grid-template-areas: 
     "title"

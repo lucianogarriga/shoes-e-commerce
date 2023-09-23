@@ -19,7 +19,7 @@ const ItemDetail = ({ data }) => {
   }, []);
 
   return (
-    <div className="container">
+    <div className="container-card">
       <div className="product-detail-container">
         {loading ? (
           <p className="product-detail-loading-text">
@@ -55,10 +55,10 @@ const ItemDetail = ({ data }) => {
               </div>
               <div>
                 <ul>
-                  <li className="item-specs-li">
-                    Zapatillas Nike Phantom GT2 Pro FG color marrón{" "}
-                  </li>
-                  <li className="item-specs-li">Talles 38 a 46 </li>
+                  <li className="item-specs-li"> {data.specs1} </li>
+                  <li className="item-specs-li"> {data.specs2}</li>
+                  <li className="item-specs-li"> {data.specs3}</li>
+                  <li className="item-specs-li"> {data.specs4}</li>
                 </ul>
               </div>
             </div>

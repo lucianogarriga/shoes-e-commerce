@@ -16,6 +16,7 @@
   font-weight: 400;
   line-height: 16px;
   text-decoration: line-through;
+  padding-bottom: 6px;
   color: rgba(0, 0, 0, 0.55);
 }
 
@@ -27,6 +28,8 @@
 .product-detail-price {
   font-size: 32px;
   font-weight: 300;
+  margin-top: 6px;
+  margin-bottom: 6px;
 }
 .product-detail-price-off {
   line-height: 24.3px;
@@ -50,6 +53,9 @@
   line-height: 18.9px;
   color: #3483fa;
 }
+.product-detail-modal-container{ 
+  margin: 3px 0px;
+}
 
 @media screen and (max-width: 990px) {
   .product-detail-price-pay {
@@ -58,9 +64,13 @@
   }
   .product-detail-ex-price {
     margin: 10px 0px;
+    padding-bottom: 0;
   }
   .product-detail-price {
     margin-right: 5px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    font-size: 32px;
   }
   .product-detail-price,
   .product-detail-price-pay {

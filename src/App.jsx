@@ -1,18 +1,16 @@
 import React from "react";
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import ItemDetailContainer from "./components/Containers/ItemDetailContainer/ItemDetailContainer";
 import ItemListContainer from "./components/Containers/ItemListContainer/ItemListContainer";
 import NavBar from "./components/Containers/NavBar/NavBar";
 import Cart from "./pages/Cart/Cart";
 import Contact from "./pages/Contact/Contact";
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Footer from "./components/Containers/Footer/Footer";
 import About from "./pages/About/About";
-
-const CartContext = React.createContext("");
-console.log("CartContext", CartContext);
 
 function App() {
   return (

@@ -2,17 +2,13 @@ import React, { useEffect, useState } from "react";
 import "./itemCount.css";
 import { Link } from "react-router-dom";
 
-const ItemCount = ({ stock, initial }) => {
+const ItemCount = ({ stock, initial, onAdd }) => {
   const [count, setCount] = useState(initial);
-  const [goToCart, setGoToCart] = useState(false);
 
   useEffect(() => {
     setCount(parseInt(initial));
   }, [initial]);
 
-  const onAdd = (count) => {
-    setGoToCart(true);
-  }; 
   return (
     <div className="item-count-container">
       <div className="item-count-quantity">
@@ -31,16 +27,16 @@ const ItemCount = ({ stock, initial }) => {
       </div>
 
       <div className="item-count-cart-buttons full-width-btn">
-        {goToCart ? (
-          <Link to="/cart"> 
+        {/* {goToCart ? ( */}
+          {/* <Link to="/cart"> 
             <button 
               onClick={() => console.log("Ir al carrito")}
               className="btn btn-primary full-width-btn" >  
               Ver carrito
             </button>
-          </Link>
-        ) : (
-          <>
+          </Link> */}
+        {/* ) : (
+          <> */}
           {/* TODO: Modificar boton Comprar Ahora */}
             <button
               disabled={count === 0 && count < stock}
@@ -56,8 +52,8 @@ const ItemCount = ({ stock, initial }) => {
             >
               Agregar al carrito
             </button>
-          </>
-        )}
+          {/* </>
+        )} */}
       </div>
     </div>
   );

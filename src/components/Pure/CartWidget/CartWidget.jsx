@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
 
 const CartWidget = () => {
-    return (
-        <>
-          <i className="bi bi-cart"> </i> 
-        </>
-    );
-}
+  return (
+    <>
+      <i className="bi bi-cart"> </i>
+    </>
+  );
+};
 
 export default CartWidget;

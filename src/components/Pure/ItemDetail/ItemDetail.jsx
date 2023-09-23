@@ -1,5 +1,9 @@
 import React, { useEffect, useState } from "react";
 import "./itemDetail.css";
+import { Link } from "react-router-dom";
+
+import { useCartContext } from "../../../context/CartProvider";
+
 import ItemCount from "../ItemCount/ItemCount";
 import ItemPrice from "./ItemPrice";
 import ItemSell from "./ItemSell";
@@ -8,7 +12,14 @@ import ItemSeller from "./ItemSeller";
 
 const ItemDetail = ({ data }) => {
   const [loading, setLoading] = useState(true);
-  
+  const [goToCart, setGoToCart] = useState(false);
+
+  const {addProduct} = useCartContext();
+
+  const onAdd = (quantity) => {
+    setGoToCart(true);
+    addProduct(data,quantity)
+  };
 
   useEffect(() => {
     const loadingText = new Promise((resolve) => {
@@ -27,11 +38,11 @@ const ItemDetail = ({ data }) => {
           </p>
         ) : (
           <>
-            <div className="item-title"> 
-                <span className="item-header-subtitle">
-                  Nuevo | +5mil vendidos
-                </span>
-                <p className="product-detail-title">{data.name}</p> 
+            <div className="item-title">
+              <span className="item-header-subtitle">
+                Nuevo | +5mil vendidos
+              </span>
+              <p className="product-detail-title">{data.name}</p>
             </div>
             <div className="item-img">
               <img
@@ -44,8 +55,21 @@ const ItemDetail = ({ data }) => {
 
             <div className="item-buttons">
               <ItemSell />
-              <ItemCount stock={5} initial={1} />
-              <ItemBenefits/>
+              {
+                goToCart 
+                ? (
+                <Link to="/cart">
+                  <button 
+                    className="btn btn-primary full-width-btn"
+                  >
+                    Ver carrito
+                  </button>
+                </Link>
+              ) : (
+                <ItemCount stock={5} initial={1} onAdd={onAdd} />
+              )}
+
+              <ItemBenefits />
             </div>
             <div className="item-specs">
               <div>
@@ -75,7 +99,7 @@ const ItemDetail = ({ data }) => {
             </div>
             {/* <div className="item-related">7 RELATED</div> */}
             <div className="item-seller">
-              <ItemSeller/>
+              <ItemSeller />
             </div>
             <div className="item-description">
               <hr />

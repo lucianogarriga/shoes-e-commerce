@@ -1,7 +1,7 @@
  
 .product-detail-container{
   display: grid;
-  grid-template-columns: 3fr 3fr 3fr;
+  grid-template-columns: 4fr 3fr 2fr;
   grid-template-areas: 
   "image title buttons"
   "image price buttons"
@@ -60,7 +60,7 @@
 
 /* Containers */
 .container-card{ 
-  max-width: 990px;
+  max-width: 1090px;
   margin: 0 auto;
 }
 .item-description, .item-features{

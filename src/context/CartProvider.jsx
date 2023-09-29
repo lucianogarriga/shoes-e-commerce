@@ -45,16 +45,25 @@ const CartProvider = ({children}) => {
         }
         setCart(newCart);
     }
- 
-
+  
     console.log("Carrito: ", cart);
+
+    const totalPrice = () => {
+        return cart.reduce((prev,act) => prev + act.quantity * act.price, 0);
+    }
+
+    const totalProducts = () => {
+        return cart.reduce((acc, prodActual) => acc + prodActual.quantity, 0);
+    }
 
     return (
         <CartContext.Provider value={{
             isInCart,
             cleanCart,
             removeProduct,
-            addProduct
+            addProduct,
+            totalPrice,
+            totalProducts
         }}> 
             {children}
         </CartContext.Provider>

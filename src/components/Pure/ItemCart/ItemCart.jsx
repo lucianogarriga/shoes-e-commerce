@@ -5,11 +5,8 @@ import { useCartContext } from "../../../context/CartProvider";
 const ItemCart = ({ product }) => {
   const { removeProduct } = useCartContext();
 
-  return (
-    <div className="cards-double-scroll"> 
-      <div className="cards-container">
-        <div className="cards-list">
-          <div className="card-wrapper">
+  return ( 
+
             <div className="andes-card">
               <div className="andes-card__header">
                 <div className="ander-card__header-title">SHOES_MARKET</div>
@@ -85,19 +82,7 @@ const ItemCart = ({ product }) => {
                 <div className="info-row"></div>
               </div>
             </div>
-          </div>
-        </div>
 
-        <div className="price-box-container">
-          <div className="expandable-footer"></div>
-          <button className="to-checkout">
-            <span className="andes-button__content">
-              <span className="andes-button__text">Continuar compra</span>
-            </span>
-          </button>
-        </div>
-      </div>
-    </div>
   );
 };
 

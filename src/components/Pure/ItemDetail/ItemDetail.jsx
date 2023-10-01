@@ -14,6 +14,7 @@ const ItemDetail = ({ data }) => {
   const [loading, setLoading] = useState(true);
   const [goToCart, setGoToCart] = useState(false);
 
+  // Destructuring de los 4 values del CartContext.Provider
   const {addProduct} = useCartContext();
 
   const onAdd = (quantity) => {

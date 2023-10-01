@@ -1,26 +1,44 @@
 import React from "react";
-import "./cart.css";
 import { useCartContext } from "../../context/CartProvider";
 import { Link } from "react-router-dom";
-
+import ItemCart from "../../components/Pure/ItemCart/ItemCart";
 
 const Cart = () => {
+  const { cart, totalPrice } = useCartContext();
 
-  const {cart, totalPrice} = useCartContext();
-
-  if(cart.length === 0) {
+  if (cart.length === 0) {
     return (
       <>
         <h2>No hay elementos en el Carrito</h2>
-        <Link to='/'>Ir a buscar productos</Link>
+        <Link to="/">Ir a buscar productos</Link>
       </>
-    )
+    );
   }
 
   return (
-    <div>
-      <h1> Hola</h1>
-    </div>
+    <>
+      <div className="cards-double-scroll">
+        <div className="cards-container">
+          <div className="cards-list">
+            <div className="card-wrapper">
+              {cart.map((product) => (
+                <ItemCart key={product.id} product={product} />
+              ))}
+              <p>Precio total: {totalPrice()}</p>
+            </div>
+          </div>
+
+          <div className="price-box-container">
+            <div className="expandable-footer"></div>
+            <button className="to-checkout">
+              <span className="andes-button__content">
+                <span className="andes-button__text">Continuar compra</span>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </>
 
     // <div className="cards-double-scroll">
     //   {/* <h1 className="cart-title">Carrito</h1> */}
@@ -33,7 +51,7 @@ const Cart = () => {
     //             SHOES_MARKET</div>
     //           </div>
     //           <div className="bf-ui-separator"></div>
-              
+
     //           <section className="item-row">
     //             <article className="item-cart">
     //               <div className="item-cart__asset">

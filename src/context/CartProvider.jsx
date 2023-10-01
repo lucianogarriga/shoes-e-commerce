@@ -52,6 +52,7 @@ const CartProvider = ({children}) => {
         return cart.reduce((prev,act) => prev + act.quantity * act.price, 0);
     }
 
+    // Funcion p/ llevar contador en el CartWidget
     const totalProducts = () => {
         return cart.reduce((acc, prodActual) => acc + prodActual.quantity, 0);
     }
@@ -63,7 +64,8 @@ const CartProvider = ({children}) => {
             removeProduct,
             addProduct,
             totalPrice,
-            totalProducts
+            totalProducts,
+            cart
         }}> 
             {children}
         </CartContext.Provider>

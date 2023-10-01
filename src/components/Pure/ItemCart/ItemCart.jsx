@@ -16,21 +16,21 @@ const ItemCart = ({ product }) => {
               <section className="item-row">
                 <article className="item-cart">
                   <div className="item-cart__asset">
-                    <img src={product.image} alt={product.title} />
+                    <img src={product.pictureUrl} alt={product.name} />
                   </div>
                   <div className="item-cart__info">
                     <div className="item-title">
-                      <span className="rich-text--small">{product.title}</span>
+                      <span className="rich-text--small">{product.name}</span>
                     </div>
                     <div className="item-cart__actions">
                       <div className="link-container--horizontal">
                         <span className="bf-ui-link">
-                          <button
+                          <span
                             className="bf-ui-rich-text"
                             onClick={() => removeProduct(product.id)}
                           >
                             Eliminar
-                          </button>
+                          </span>
                         </span>
                         <span className="bf-ui-link">
                           <span className="bf-ui-rich-text">Guardar</span>

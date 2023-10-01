@@ -95,6 +95,9 @@
 
 @media screen and (max-width: 790px) {
     /* HEADER */
+    .andes-card{
+        margin-bottom: 16px;
+    }
     .andes-card__header{
         display: flex;
         border-top-left-radius: 6px;
@@ -115,8 +118,7 @@
         display: flex;
         flex-wrap: wrap;
         margin-left: auto;
-        padding: 16px;
-        background: #fff;
+        padding: 16px; 
         position: relative;
         width: 100%;
     } 

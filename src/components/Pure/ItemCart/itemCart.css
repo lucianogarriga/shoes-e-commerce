@@ -26,61 +26,131 @@
 }
 
 /* SECTION */
-.item-row{
-    display: flex; 
+  
+.item-row{ 
+    display: flex;
     flex-wrap: wrap;
-    width: 100%;
-    border-radius: 6px;
-    padding: 24px;
+    box-sizing: border-box;
     margin-left: auto;
-}
+    padding: 24px; 
+    border-radius: 6px;
+    position: relative;
+    width: 100%;
+} 
 .item-cart{
     padding: 0;
-    width: 100%;
     display: flex;
+    width: 63%;
 }
 .item-cart__asset{
-    height: 64px;
-    width: 64px;
-    margin-right: 24px;
+    margin-right: 24px; 
 }
 .item-cart__asset img{
+    cursor: pointer;
     height: 64px;
     width: 64px;
-    overflow-clip-margin: content-box;
-    overflow: clip;
 }
 .item-cart__info{
-    padding-bottom: 16px;
-    margin-top: 0;
+    margin-bottom: 0;
     margin-bottom: 0;
     overflow: hidden;
 }
+
 .item-title{
     font-size: 14px;
     line-height: 1.25;
-    cursor: pointer;
+    margin-top: 8px;
 }
 .rich-text--small{
     font-size: 16px;
-    color: #1a1a1a;
+    font-weight: 600;
     display: inline-block;
     max-width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    font-weight: 600;
 }
 .item-cart__actions{
-    margin-top: 0;
-    line-height: 18px;
+    line-height: 18px; 
 }
 .link-container--horizontal{
-    display: flex;
-    flex-direction: row;
-    margin-top: 16px;
+    margin-top: 12px;
     padding: 0;
+    display: flex; 
 }
+
+.bf-ui-link{
+    margin-right: 8px;
+    font-weight: 400;
+    color: #3483fa;
+    align-items: center;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 16px;
+    position: relative;
+    transition: .15s ease-in-out;
+}
+.bf-ui-rich-text{
+    font-size: 12px;
+    font-weight: 600;
+    white-space: pre-wrap;
+    width: fit-content;
+}
+
+
+
+
+/* QUANTITY CONTAINER */
+.quantity-selector-container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    margin: 0 12px 0 0;
+    min-width: 140px;
+    width: auto; 
+}
+.quantity-selector-mobile{
+    height: auto;
+    justify-content: space-between;
+    line-height: 18px;
+    min-width: 45%;
+    padding: 8px 7px;
+    width: auto;
+}
+.quantity-selector-container .quantity-selector-mobile {
+    align-items: center;
+    border: 1px solid rgba(0,0,0,.07);
+    border-radius: 4px;
+    color: rgba(0,0,0,.9);
+    cursor: pointer;
+    display: flex;
+}
+.bf-ui-rich-price{ 
+     margin-bottom: 0;
+}
+
+/* ITEM-PRICE-CONTAINER */
+.item-price-container{
+    align-items: center; 
+    margin: 0 0 0 auto;
+    text-align: right; 
+}
+.item-price{
+    display: flex;
+    justify-content: flex-end;
+    gap: 4px;
+}
+.bf-ui-rich-price{
+    display: inline-flex;
+    align-items: flex-end;
+    font-size: 18px; 
+}
+.bf-ui-price-small{
+    align-self: flex-end;
+    margin-top: 6px;
+}
+
+
 /* Span */
 .bf-ui-link{
     padding: 0 0 4px;
@@ -93,7 +163,40 @@
     display: inline-flex;
 }
 
-@media screen and (max-width: 790px) {
+/* FOOTER */
+.andes-card__footer{
+    background-color: #f5f5f5;
+    padding: 0;
+}
+.ticket-row{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    margin-bottom: 0;
+    padding: 12px 16px; 
+}
+.ticket-row__right-column{
+    margin-left: auto;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.ticket-row__primary-text{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    justify-content: flex-end;
+    line-height: 1.25;
+}
+.rich-text--success{
+    font-weight: 600;
+    color: #00a650;
+    font-size: 14px;
+} 
+
+@media screen and (max-width: 890px) {
     /* HEADER */
     .andes-card{
         margin-bottom: 16px;
@@ -112,21 +215,13 @@
         margin: 0;
         padding: 0;
     }
-
-    /* ITEM-ROW */
-    .item-row{ 
-        display: flex;
-        flex-wrap: wrap;
+ 
+    .item-row{  
         margin-left: auto;
-        padding: 16px; 
+        padding: 24px; 
         position: relative;
         width: 100%;
     } 
-    .item-cart{
-        padding: 0;
-        display: flex;
-        width: calc(100% - 32px);
-    }
     .item-cart__asset{
         margin-right: 12px;
         height: 48px;
@@ -140,125 +235,11 @@
         margin-bottom: 16px;
         overflow: hidden;
     }
-    .item-title{
-        font-size: 14px;
-        line-height: 1.25;
-    }
     .rich-text--small{
-        font-size: 14px;
-        display: inline-block;
-        max-width: 100%;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
+        font-size: 14px; 
     }
-    .item-cart__actions{
-        line-height: 18px; 
-    }
-    .link-container--horizontal{
-        margin-top: 12px;
-        padding: 0;
-        display: flex; 
-    }
-
-    .bf-ui-link{
-        margin-right: 8px;
-        font-weight: 400;
-        color: #3483fa;
-        align-items: center;
-        cursor: pointer;
-        display: inline-flex;
-        font-size: 16px;
-        position: relative;
-        transition: .15s ease-in-out;
-    }
-    .bf-ui-rich-text{
-        font-size: 12px;
-        font-weight: 600;
-        white-space: pre-wrap;
-        width: fit-content;
-    }
-
-    /* QUANTITY CONTAINER */
-    .quantity-selector-mobile-container{
-        display: flex;
-        align-items: flex-start;
-        justify-content: flex-end;
-        margin: 0 12px 0 0;
+    .quantity-selector-container{ 
         min-width: 115px;
         width: auto; 
-    }
-    .quantity-selector-mobile{
-        height: auto;
-        justify-content: space-between;
-        line-height: 18px;
-        min-width: 45%;
-        padding: 8px 7px;
-        width: auto;
-    }
-    .quantity-selector-mobile-container .quantity-selector-mobile {
-        align-items: center;
-        border: 1px solid rgba(0,0,0,.07);
-        border-radius: 4px;
-        color: rgba(0,0,0,.9);
-        cursor: pointer;
-        display: flex;
-    }
-
-    /* ITEM-PRICE-CONTAINER */
-    .item-price-container{
-        align-items: center; 
-        margin: 0 0 0 auto;
-        text-align: right; 
-    }
-    .item-price{
-        display: flex;
-        justify-content: flex-end;
-        gap: 4px;
-    }
-    .bf-ui-rich-price{
-        display: inline-flex;
-        align-items: flex-end;
-        font-size: 18px; 
-    }
-    .bf-ui-price-small{
-        align-self: flex-end;
-        margin-top: 6px;
-    }
-
-    /* FOOTER */
-    .andes-card__footer{
-        background-color: #f5f5f5;
-        padding: 0;
-    }
-    .ticket-row{
-        display: flex;
-        justify-content: space-between;
-        background-color: #fff;
-        margin-bottom: 0;
-        padding: 12px 16px; 
-    }
-    .ticket-row__right-column{
-        margin-left: auto;
-        text-align: right;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-    }
-    .ticket-row__primary-text{
-        align-items: center;
-        display: flex;
-        flex-direction: row;
-        font-size: 16px;
-        justify-content: flex-end;
-        line-height: 1.25;
-    }
-    .rich-text--success{
-        font-weight: 600;
-        color: #00a650;
-        font-size: 14px;
-    }
-    .item-row{
-        display: flex;
     }
 }

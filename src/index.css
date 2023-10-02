@@ -8,11 +8,13 @@
 
 body{
   margin: 0 auto;
-  /* max-width: 80em; */
   font-family: 'proxima-nova', sans-serif;
   background-color: #ebebeb;
   color: #000000;
   line-height: 1.5; 
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
 }
 
 a{

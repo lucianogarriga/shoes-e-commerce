@@ -1,8 +1,11 @@
-.cards-double-scroll{
-    background-color: #ededed;
-    margin: auto;
-    max-width: 1200px;
+.main-container{
+    margin: 0px 50px;
+    max-width: 100%;
     width: 100%;
+}
+
+.cards-double-scroll{
+    background-color: #ededed;  
     min-height: auto;
 } 
 .cards-container{

@@ -12,12 +12,14 @@ import Contact from "./pages/Contact/Contact";
 import Footer from "./components/Containers/Footer/Footer";
 import About from "./pages/About/About";
 import CartProvider from "./context/CartProvider";
+import MaxWidthContainer from "./components/Containers/MaxWidth/MaxWidthContainer";
 
 function App() {
   return (
     <BrowserRouter>
       <CartProvider>
         <NavBar />
+        <MaxWidthContainer>
         <Routes> 
           <Route exact path="/" element={<ItemListContainer />} />
           <Route path="/category/:categoryId" element={<ItemListContainer />} />
@@ -26,6 +28,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+        </MaxWidthContainer>
         <Footer />
       </CartProvider>
     </BrowserRouter>

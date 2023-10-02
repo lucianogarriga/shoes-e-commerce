@@ -1,4 +1,5 @@
 import React from "react";
+import "./cart.css";
 import { useCartContext } from "../../context/CartProvider";
 import { Link } from "react-router-dom";
 import ItemCart from "../../components/Pure/ItemCart/ItemCart";
@@ -17,6 +18,7 @@ const Cart = () => {
 
   return (
     <>
+    <div className="main-container">
       <div className="cards-double-scroll">
         <div className="cards-container">
           <div className="cards-list">
@@ -37,6 +39,7 @@ const Cart = () => {
             </button>
           </div>
         </div>
+      </div>
       </div>
     </>
 

@@ -9,12 +9,17 @@ const Checkout = () => {
     return (
       <>
         <h2> Carro con 1 solo producto</h2>
+        <h3>Producto: {totalPrice()}</h3>
+        <h3>Total {totalPrice()}</h3>
       </>
     );
   } else if (cart.length >= 2) {
     return (
       <>
         <h2>Carro con más de 2 productos</h2>
+        {/* <h3>Resumen de compra</h3> */}
+        <h3>Productos ({cart.length})</h3>
+        <h3>Total {totalPrice()}</h3>
       </>
     );
   }
@@ -23,7 +28,7 @@ const Checkout = () => {
     <div>
       <h2>Carro Vacío</h2>
       <Link to="/">
-        <span className="andes-button__content">Descubrir productos</span>
+        <span>Descubrir productos</span>
       </Link>
     </div>
   );

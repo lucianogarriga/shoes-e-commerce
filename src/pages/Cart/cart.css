@@ -81,6 +81,72 @@
     border-color: transparent;
 }
 
+
+
+
+/* PRICE BOX CONTAINER ---- RIGHT CONTAINER */
+.price-box-container{
+    border-radius: 6px;
+    box-shadow: 0 1px 2px rgba(0,0,0,.12);
+    height: fit-content;
+    margin-bottom: 16px;
+    margin-top: 0px;
+    padding: 20px 0 24px;  
+    background: #fff;
+    box-sizing: border-box;
+}
+.expandable-footer{
+    min-height: 40px;
+
+}
+.expandable-no-button{
+    padding-top: 16px;
+}
+.ticket-row-container{
+    height: 52px;
+    opacity: 1;
+}
+.ticket-row{
+    display: flex;
+    justify-content: space-between; 
+    padding: 0 24px;
+}
+.ticket-row__left{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+}
+.ticket-row__left--text, .ticket-row__right--text{
+    align-items: center;
+    color: rgba(0,0,0,.9);
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    font-weight: 400;
+    justify-content: flex-end;
+    line-height: 1.25;
+    margin: 0;
+    padding: 0;
+}
+.rich-text, .offers, .bf-ui-rich-text{
+    font-size: 14px;
+}
+.bf-ui-rich-text{
+    color: #00a650;
+}
+.expandable--content{
+    margin-bottom: 8px;
+}
+.rich-text--bold, .offers-total{
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 12px;
+}
+.top-space{
+    margin-top: 8px;
+}
+
 @media screen and (max-width: 890px) {
    
     .cards-container{
@@ -90,16 +156,19 @@
         position: relative;
     } 
     .cards-list{
-        padding: 8px 0px; 
-    }
-    .cards-container {
         padding: 8px 16px;   
-    }
+    } 
     .card-wrapper{ 
         display: flex;
         flex-direction: column;
-        border-radius: 6px; 
-        box-shadow: 0 1px 0px 0 rgba(0,0,0,.12);
+        border-radius: 6px;  
     }  
-    
+    .price-box-container{
+        border-radius: 6px 6px 0 0;
+        box-shadow: 0 -6px 16px rgba(0,0,0,.1);
+        padding: 0 16px 16px;
+        margin-bottom: 16px;
+        margin-top: 0;
+        width: 100%;
+    }
 }

@@ -29,12 +29,12 @@ const Cart = () => {
               </div> 
             </div>
 
-            <div className="price-box-container">
+            {/* <div className="price-box-container">
               <div className="expandable-footer"></div> 
                 <span className="andes-button__text">
-                  {/* <span>Resumen de Compra</span> */}
+                  <span>Resumen de Compra</span>
                 </span> 
-            </div>
+            </div> */}
           </div>
         </div>
       </>
@@ -55,8 +55,61 @@ const Cart = () => {
           </div>
 
           <div className="price-box-container">
-            <div className="expandable-footer"></div>
-            <p>Precio total: {totalPrice()}</p>
+            <div className="expandable-footer">
+              <div className="expandable-no-button">
+                <div className="expandable--children">
+                  <div className="ticket-row-container">
+                    <div className="ticket-row">
+                      <div className="ticket-row__left">
+                        <div className="andes-tooltip">
+                          <h5 className="ticket-row__left--text">
+                          <span className="rich-text">Productos</span>
+                          </h5>
+                        </div>
+                      </div>
+                      <div className="ticket-row__right">
+                        <h6 className="ticket-row__right--text">
+                          <span className="offers">$ {totalPrice()}</span>
+                        </h6>
+                      </div>
+                    </div>
+                    <div className="ticket-row">
+                      <div className="ticket-row__left">
+                        <div className="andes-tooltip">
+                          <h5 className="ticket-row__left--text">
+                          <span className="rich-text">Envío</span>
+                          </h5>
+                        </div>
+                      </div>
+                      <div className="ticket-row__right">
+                        <h6 className="ticket-row__right--text">
+                          <span className="bf-ui-rich-text">Gratis</span>
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="expandable--content top-space">
+                    <div className="ticket-row">
+                      <div>
+                        <div className="andes-tooltip">
+                          <div className="ticket-row__left">
+                          <h5 className="ticket-row__left--text">
+                            <span className="rich-text rich-text--bold">Total</span>
+                            </h5>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="ticket-row__right">
+                          <h6 className="ticket-row__right--text">
+                            <span className="offers-total">$ {totalPrice()}</span>
+                          </h6>
+                        </div>
+                    </div> 
+                  </div>
+                </div>
+              </div>
+            </div>
+            
             <button className="to-checkout">
               <span className="andes-button__content">
                 <span className="andes-button__text">Continuar compra</span>

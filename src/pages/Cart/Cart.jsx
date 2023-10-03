@@ -83,7 +83,7 @@ const Cart = () => {
                       </div>
                       <div className="ticket-row__right">
                         <h6 className="ticket-row__right--text">
-                          <span className="bf-ui-rich-text">Gratis</span>
+                          <span className="bf-ui-rich-text-green">Gratis</span>
                         </h6>
                       </div>
                     </div>
@@ -110,7 +110,7 @@ const Cart = () => {
               </div>
             </div>
             
-            <button className="to-checkout">
+            <button className="andes-button to-checkout bf-ui-button">
               <span className="andes-button__content">
                 <span className="andes-button__text">Continuar compra</span>
               </span>

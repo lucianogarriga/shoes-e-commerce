@@ -28,7 +28,7 @@ const ItemCount = ({ stock, initial, onAdd }) => {
 
       <div className="item-count-cart-buttons full-width-btn">
         {/* {goToCart ? ( */}
-          {/* <Link to="/cart"> 
+        {/* <Link to="/cart"> 
             <button 
               onClick={() => console.log("Ir al carrito")}
               className="btn btn-primary full-width-btn" >  
@@ -37,22 +37,25 @@ const ItemCount = ({ stock, initial, onAdd }) => {
           </Link> */}
         {/* ) : (
           <> */}
-          {/* TODO: Modificar boton Comprar Ahora */}
-            <button
-              disabled={count === 0 && count < stock}
-              onClick={() => onAdd(count)}
-              className="btn btn-primary full-width-btn"
-            >
-              Comprar ahora
-            </button>
-            <button
-              disabled={count === 0 && count < stock}
-              onClick={() => onAdd(count)}
-              className="btn btn-outline-primary full-width-btn"
-            >
-              Agregar al carrito
-            </button>
-          {/* </>
+        {/* TODO: Modificar boton Comprar Ahora */}
+
+        <Link to="/checkout">
+          <button
+            disabled={count === 0 && count < stock}
+            onClick={() => onAdd(count)}
+            className="btn btn-primary full-width-btn"
+          >
+            Comprar ahora
+          </button>
+        </Link>
+        <button
+          disabled={count === 0 && count < stock}
+          onClick={() => onAdd(count)}
+          className="btn btn-outline-primary full-width-btn"
+        >
+          Agregar al carrito
+        </button>
+        {/* </>
         )} */}
       </div>
     </div>

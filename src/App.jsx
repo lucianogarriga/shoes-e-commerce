@@ -13,6 +13,7 @@ import Footer from "./components/Containers/Footer/Footer";
 import About from "./pages/About/About";
 import CartProvider from "./context/CartProvider";
 import MaxWidthContainer from "./components/Containers/MaxWidth/MaxWidthContainer";
+import Checkout from "./pages/Checkout/Checkout";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/category/:categoryId" element={<ItemListContainer />} />
           <Route path="/detail/:detailId" element={<ItemDetailContainer />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/checkout" element={<Checkout/>} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>

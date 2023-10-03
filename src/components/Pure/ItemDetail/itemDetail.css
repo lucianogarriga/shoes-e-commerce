@@ -78,7 +78,7 @@
   flex-direction: column;
   align-items: flex-start;
   font-weight: 300; 
-  margin: 22px 32px 0px 0px;  
+  margin: 42px 32px 0px 0px;  
 }
 
 /* Product */
@@ -101,7 +101,7 @@
 /* ITEM - TITLE */
 .product-detail-title{ 
 	font-family: 'proxima-nova', sans-serif;
-  margin: 0px 0px 8px;
+  margin: 0px 0px;
   font-size: 20px; 
   font-weight: 600;
 }
@@ -116,6 +116,7 @@
 .item-header-subtitle{
   font-size: 14px;
   color: #7c7b7b;
+  margin-top: 16px;
 }
  
 /* Item buttons */ 

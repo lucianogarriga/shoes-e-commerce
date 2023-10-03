@@ -25,6 +25,9 @@
     width: 100%;
 }
 
+
+
+
 /* SECTION */
   
 .item-row{ 
@@ -196,7 +199,16 @@
     font-size: 14px;
 } 
 
-@media screen and (max-width: 890px) {
+/* EMPTY CONTAINER - RIGHT DIV */
+@media  (min-width: 769px) {
+    .expandable-footer{
+        display: block;
+    }
+}
+
+
+
+@media  (max-width: 890px) {
     /* HEADER */
     .andes-card{
         margin-bottom: 16px;

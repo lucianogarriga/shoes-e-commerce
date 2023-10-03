@@ -12,6 +12,7 @@
     min-width: 270px;
     margin: 0px 0px 44px;
     padding: 26px 0px;
+    position: relative;
 }
 .cards-list{
     padding-bottom: 0;
@@ -41,13 +42,13 @@
     text-align: center;
 }
 
-.bf-ui-rich-text{
+/* .bf-ui-rich-text-green{
     font-size: 18px; 
     width: 328px;
     white-space: pre-wrap;
     width: fit-content;
-} 
-.state-container, .bf-ui-rich-text{
+}  */
+.state-container{
     margin-bottom: 8px;
 }
 .text-gray{
@@ -73,12 +74,7 @@
 }
 .andes-button__content{
     color: #fff;
-}
-.bf-ui-button{
-    width: 100%;
-    position: relative;
-    background-color: #3483fa;
-    border-color: transparent;
+    height: 100%;
 }
 
 
@@ -94,13 +90,14 @@
     padding: 20px 0 24px;  
     background: #fff;
     box-sizing: border-box;
+    position: sticky;
+    z-index: 10;
 }
 .expandable-footer{
-    min-height: 40px;
-
-}
+    min-height: 40px; 
+} 
 .expandable-no-button{
-    padding-top: 16px;
+    margin-top: 8px;
 }
 .ticket-row-container{
     height: 52px;
@@ -129,11 +126,12 @@
     margin: 0;
     padding: 0;
 }
-.rich-text, .offers, .bf-ui-rich-text{
+.rich-text, .offers{
     font-size: 14px;
 }
-.bf-ui-rich-text{
+.bf-ui-rich-text-green{
     color: #00a650;
+    font-size: 14px;
 }
 .expandable--content{
     margin-bottom: 8px;
@@ -145,6 +143,23 @@
 }
 .top-space{
     margin-top: 8px;
+}
+
+.to-checkout{ 
+    width: 100%;
+    position: relative;
+    margin: 24px 24px 0;
+    width: calc(100% - 48px);
+    display: flex;
+    justify-content: center;
+}
+.bf-ui-button{
+    background-color: #3483fa;
+    border-color: transparent;
+}
+.bf-ui-button:hover{ 
+    background-color: #2968c8;
+    transition: box-shadow .25s ease-out,background-color .2s ease-out;
 }
 
 @media screen and (max-width: 890px) {

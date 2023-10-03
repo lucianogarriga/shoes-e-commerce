@@ -104,7 +104,7 @@
 }
 
 /* Desktop Version */
-@media only screen and (min-width: 920px){
+@media only screen and (min-width: 890px){
   .band{
     grid-template-columns: repeat(4, 1fr);
   }

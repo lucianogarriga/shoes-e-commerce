@@ -43,9 +43,6 @@ const NavBar = () => {
             </form>
             <ul className="navbar-nav mr-auto">
               <li className="nav-item">
-                <NavLink to="/cart" className="navbar-link">
-                  <CartWidget />
-                </NavLink>
                 <NavLink to="/category/zapatillas" className="navbar-link">
                   Zapatillas
                 </NavLink>
@@ -57,6 +54,9 @@ const NavBar = () => {
                 </NavLink>
                 <NavLink to="/contact" className="navbar-link">
                   Contacto
+                </NavLink>
+                <NavLink to="/cart" className="navbar-link">
+                  <CartWidget />
                 </NavLink>
               </li>
             </ul>

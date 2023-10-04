@@ -1,9 +1,17 @@
 import React from "react";
+import "./cartWidget.css";
+import { useCartContext } from "../../../context/CartProvider";
 
 const CartWidget = () => {
+
+  const {cart } = useCartContext();
+
   return (
     <>
-      <i className="bi bi-cart"> </i>
+      <a className="nav-cart">
+        <i className="bi bi-cart nav-icon-cart"></i>
+        <span className="nav-icon-cart-quantity">{cart.length}</span>
+      </a> 
     </>
   );
 };

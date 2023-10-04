@@ -4,32 +4,36 @@ import { Link } from "react-router-dom";
 
 const Checkout = () => {
   const { cart, totalPrice } = useCartContext();
+  let title, productText, totalText;
 
-  if (cart.length === 1) {
-    return (
-      <>
-        <h2> Carro con 1 solo producto</h2>
-        <h3>Producto: {totalPrice()}</h3>
-        <h3>Total {totalPrice()}</h3>
-      </>
-    );
-  } else if (cart.length >= 2) {
-    return (
-      <>
-        <h2>Carro con más de 2 productos</h2>
-        {/* <h3>Resumen de compra</h3> */}
-        <h3>Productos ({cart.length})</h3>
-        <h3>Total {totalPrice()}</h3>
-      </>
-    );
+  if(cart.length === 1){
+    title= "Carro con 1 solo producto";
+    productText="Producto: ";
+    totalText="Total";
+  } else if (cart.length >= 2){
+    title=`Carro con ${cart.length} productos`;
+    productText=`Productos (${cart.length}):`;
+    totalText="Total";
+  } else {
+    title="Carrito Vacío";
+    productText=null;
+    totalText=null;
   }
+ 
 
   return (
     <div>
-      <h2>Carro Vacío</h2>
-      <Link to="/">
+      <h2>{title}</h2>
+      {productText && <h3>{productText} {totalPrice()}</h3>}
+      {totalText && <h3>{totalText} {totalPrice()}</h3>}
+      {cart.length === 0 && (
+        <>
+        <Link to="/">
         <span>Descubrir productos</span>
       </Link>
+        </>
+      )}
+      
     </div>
   );
 };

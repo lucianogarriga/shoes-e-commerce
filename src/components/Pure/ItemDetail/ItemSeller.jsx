@@ -7,7 +7,9 @@ const ItemSeller = () => {
       <h2 className="item-title-seller">Información sobre el vendedor</h2>
       <div className="item-seller-info">
         <div className="item-seller-status-info">
-          <i></i>
+          <div className="item-ui-pdp-icon">
+            <img className="seller-icon-medal" src="https://http2.mlstatic.com/frontend-assets/vpp-frontend/medal.svg"/>
+          </div>
           <div>
             <p className="item-status-title">MercadoLíder Platinum</p>
             <p className="item-status-subtitle">
@@ -21,13 +23,13 @@ const ItemSeller = () => {
             <li className="item-seller-description">
               <strong className="item-sales">+1000</strong>
               <p className="item-sales-description">
-                Ventas en los últimos 60 días
+                Ventas concretadas
               </p> 
             </li>
             <li className="item-seller-description">
             <strong className="item-sales">
                 <div>
-                    <img src="https://http2.mlstatic.com/frontend-assets/vpp-frontend/message-positive.svg" />
+                    <img className="seller-icon" src="https://http2.mlstatic.com/frontend-assets/vpp-frontend/message-positive.svg" />
                 </div>
             </strong>
               <p className="item-sales-description">Brinda buena atención</p>
@@ -35,7 +37,7 @@ const ItemSeller = () => {
             <li className="item-seller-description">
             <strong className="item-sales">
                 <div>
-                    <img src="https://http2.mlstatic.com/frontend-assets/vpp-frontend/time-positive.svg" />
+                    <img className="seller-icon" src="https://http2.mlstatic.com/frontend-assets/vpp-frontend/time-positive.svg" />
                 </div>
             </strong>
               <p className="item-sales-description">

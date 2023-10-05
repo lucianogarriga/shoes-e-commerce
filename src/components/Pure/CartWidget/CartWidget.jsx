@@ -10,7 +10,8 @@ const CartWidget = () => {
     <>
       <a className="nav-cart">
         <i className="bi bi-cart nav-icon-cart"></i>
-        <span className="nav-icon-cart-quantity">{cart.length}</span>
+        {cart.length >= 1 && <span className="nav-icon-cart-quantity">{cart.length}</span>}
+        
       </a> 
     </>
   );

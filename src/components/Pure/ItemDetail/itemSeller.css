@@ -1,11 +1,18 @@
 .item-title-seller{
+    color: rgba(0,0,0,.9);
     font-size: 18px;
     font-weight: 400;
-    margin-bottom: 24px;
+    margin-bottom: 28px;
     width: 100%;
+    line-height: 1.25;
 } 
 .item-seller-status-info{
     margin-bottom: 20px;
+    display: flex;
+}
+.item-ui-pdp-icon{
+    margin: 0 10px 0 0;
+    width: 20px;
 }
 
 .item-seller-reputation-info{
@@ -27,11 +34,17 @@
     line-height: 1;
     text-align: center;
 }
+.item-sales-description{
+    width: 100%;
+    margin-top: 8px;
+    line-height: 1;
+}
 
 .item-status-title{
     font-weight: 600;
     color: #00a650;
     font-size: 16px;
+    margin-bottom: 2px;
 }
 .item-status-subtitle{
     color: rgba(0,0,0,.55);
@@ -39,6 +52,12 @@
 }
 .item-sales{
     display: inline-block;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.seller-icon{
+    width: 30px; 
 }
 
 @media screen and (max-width: 990px) {

@@ -200,11 +200,11 @@
 } 
 
 /* EMPTY CONTAINER - RIGHT DIV */
-@media  (min-width: 769px) {
-    .expandable-footer{
+/* @media  (min-width: 769px) {
+    .price-box-container{
         display: block;
     }
-}
+} */
 
 
 

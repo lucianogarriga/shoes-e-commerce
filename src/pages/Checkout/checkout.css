@@ -147,7 +147,7 @@ form{
     width: auto;
 }
 
-@media (width <= 890px){ 
+@media (width <= 820px){ 
     .cart-main-container{
         flex-direction: column;
     }
@@ -155,7 +155,7 @@ form{
         width: 100%;
         min-height: 100%;
         padding: 56px 24px; 
-        text-align: center;
+        text-align: center; 
     }
     .cart-aside{ 
         background-color: #ebebeb;  
@@ -167,6 +167,14 @@ form{
         height: 30px; 
         box-sizing: border-box;
     } 
+    .shipping-container, 
+    .checkout-form{
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        box-sizing: border-box;
+        overflow: hidden;
+    }
     .overview-component__item-title{
         font-size: 22px;
         font-weight: 300;
@@ -176,5 +184,9 @@ form{
     }
     .overview-component__column{
         font-size: 24px;
+    }
+    .checkout-form form input, 
+    .checkout-form form select {
+        width: 250px;
     }
 }

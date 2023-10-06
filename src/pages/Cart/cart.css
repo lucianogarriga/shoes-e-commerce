@@ -10,8 +10,10 @@
     min-height: unset;
     max-width: 1200px;
     min-width: 270px;
-    margin: 0px 0px 44px;
+    margin: 0 auto;
     padding: 26px 0px;
+    padding-left: 20px;
+    padding-right: 20px;
     position: relative;
 }
 .cards-list{
@@ -169,9 +171,10 @@
         flex-direction: column;
         min-width: 270px; 
         position: relative;
+        padding: 0;
     } 
     .cards-list{
-        padding: 8px 16px;   
+        padding: 8px 20px;   
     } 
     .card-wrapper{ 
         display: flex;

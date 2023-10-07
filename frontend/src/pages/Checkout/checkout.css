@@ -116,7 +116,7 @@
 }
 
 
-form{
+.form-container{
     display: block;
 }
 .checkout-form form .form-group{

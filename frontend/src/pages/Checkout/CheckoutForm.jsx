@@ -7,7 +7,7 @@ const CheckoutForm = () => {
           Completa el siguiente Formulario con tus datos
         </h4>
       <div className="checkout-form">
-        <form>
+        <form className="form-container">
           <div className="form-group">
             <label htmlFor="name">Nombre:</label>
             <input type="text" placeholder="Nombre" required />

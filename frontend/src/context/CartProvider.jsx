@@ -7,6 +7,7 @@ export const useCartContext = () => useContext(CartContext);
 
 const CartProvider = ({children}) => {
     const [cart, setCart] = useState([]);
+    const [filteredProducts, setFilteredProducts] = useState([]);
  
     // F1 - True o false - Producto en el carrito
     const isInCart = (id) => {
@@ -20,19 +21,7 @@ const CartProvider = ({children}) => {
     const removeProduct = (id) => {
         setCart(cart.filter(product => product.id !== id))
     }
-
-    // F4 - Add Product - C/ logica para evitar repetidos
-    /* 
-        @param item Es el objeto completo con toda la info (data en ItemDetail)
-        @param newQuantity Es la cantidad seleccionada por el usuario
-        Luego creo un nuevo carrito, pero filtrado. Esten todos menos el seleccionado 
-    */
-    // const addProduct = (item, newQuantity) => {
-    //     const newCart = cart.filter(product => product.id !== item.id);
-    //     newCart.push({...item, quantity: quantity + newQuantity});
-    //     setCart(newCart);
-    // }
-
+ 
     const addProduct = (item, quantity) => {
         let newCart;
         let product = cart.find(product => product.id === item.id);
@@ -65,7 +54,9 @@ const CartProvider = ({children}) => {
             addProduct,
             totalPrice,
             totalProducts,
-            cart
+            cart,
+            filteredProducts,
+            setFilteredProducts
         }}> 
             {children}
         </CartContext.Provider>

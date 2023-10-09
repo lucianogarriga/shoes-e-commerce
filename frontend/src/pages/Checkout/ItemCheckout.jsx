@@ -8,7 +8,16 @@ const ItemCheckout = ({ productText }) => {
   return (
     <>
       <div className="cart-aside">
-            <aside className="cart-aside__content-aside">
+
+        {cart.length === 0 ? (
+          <>
+            <Link to="/">
+              <span>Descubrir productos</span>
+            </Link>
+          </>
+        ):
+        (
+          <aside className="cart-aside__content-aside">
               <section className="cart-aside__content"> 
                 {cart.map((product) => (
                     <div key={product.id}> 
@@ -52,12 +61,6 @@ const ItemCheckout = ({ productText }) => {
                 </div>
               </section>
             </aside>
-        {cart.length === 0 && (
-          <>
-            <Link to="/">
-              <span>Descubrir productos</span>
-            </Link>
-          </>
         )}
       </div>
     </>

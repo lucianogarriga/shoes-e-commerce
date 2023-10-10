@@ -4,7 +4,7 @@ const CheckoutForm = () => {
   return (
     <>
       <h4 className="form-title">
-        Completa el siguiente Formulario con tus datos
+        Completa el siguiente formulario con tus datos
       </h4>
       <div className="checkout-form">
         <form className="form-container" id="main-form" method="post">
@@ -14,7 +14,7 @@ const CheckoutForm = () => {
               type="text"
               id="name"
               name="name"
-              placeholder="Nombre"
+              placeholder="Juan"
               autoComplete="off"
               required
             />
@@ -25,7 +25,7 @@ const CheckoutForm = () => {
               type="text"
               id="surname"
               name="surname"
-              placeholder="Apellido"
+              placeholder="Perez"
               autoComplete="off"
               required
             />
@@ -36,7 +36,7 @@ const CheckoutForm = () => {
               type="email"
               id="email"
               name="email"
-              placeholder="nombre@mail.com"
+              placeholder="juan@perez.com"
               autoComplete="off"
               required
             />
@@ -66,10 +66,10 @@ const CheckoutForm = () => {
           <div className="form-group"> 
             <label htmlFor="payment">Método de Pago:</label>
             <select id="payment" name="payment" required>
-              <option value="creditCard">Tarjeta de Crédito</option>
-              <option value="debitCard">Tarjeta de Débito</option>
               <option value="transfer">Transferencia</option>
               <option value="cash">Efectivo</option>
+              <option value="creditCard">Tarjeta de Crédito</option>
+              <option value="debitCard">Tarjeta de Débito</option>
             </select>
           </div>
         </form>

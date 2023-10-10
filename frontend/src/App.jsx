@@ -14,6 +14,7 @@ import About from "./pages/About/About";
 import CartProvider from "./context/CartProvider";
 import MaxWidthContainer from "./components/Containers/MaxWidth/MaxWidthContainer";
 import Checkout from "./pages/Checkout/Checkout";
+import CheckoutOk from "./pages/Checkout/CheckoutOk";
 
 function App() {
   return (
@@ -29,6 +30,8 @@ function App() {
           <Route path="/checkout" element={<Checkout/>} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/checkout-ok" element={<CheckoutOk/>}/>
+          
         </Routes>
         </MaxWidthContainer>
         <Footer />

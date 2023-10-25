@@ -4,6 +4,8 @@ import productos from "../../../data/products.json";
 import "./itemDetailContainer.css";
 import { useParams } from "react-router-dom";
 
+import {getFirestore, doc, getDoc} from 'firebase/firestore';
+
 const ItemDetailContainer = () => {
   const [data, setData] = useState({});
   // Para guardar 1 objeto, justamente inicializamos el estado como un objeto vacio. 
@@ -15,8 +17,8 @@ const ItemDetailContainer = () => {
       // Al resolverse, debe traer el objeto
       resolve(productos);
     }, 1000);
-  });
-
+  }); 
+  
   const dataDetailId = () => {
     getData.then((res) => {
       setData(res.find((product) => product.id === parseInt(detailId)));

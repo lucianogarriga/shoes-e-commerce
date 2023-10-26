@@ -9,31 +9,38 @@ import {getFirestore, doc, getDoc} from 'firebase/firestore';
 const ItemDetailContainer = () => {
   const [data, setData] = useState({});
   // Para guardar 1 objeto, justamente inicializamos el estado como un objeto vacio. 
-
   const { detailId } = useParams();
 
-  const getData = new Promise((resolve) => {
-    setTimeout(() => { 
-      // Al resolverse, debe traer el objeto
-      resolve(productos);
-    }, 1000);
-  }); 
+  // const getData = new Promise((resolve) => {
+  //   setTimeout(() => { 
+  //     // Al resolverse, debe traer el objeto
+  //     resolve(productos);
+  //   }, 1000);
+  // }); 
   
-  const dataDetailId = () => {
-    getData.then((res) => {
-      setData(res.find((product) => product.id === parseInt(detailId)));
-    });
-  }
-  const dataDetailNone = () => {
-    getData.then((res) => {
-      setData(res);
-    });
-  }
+  // const dataDetailId = () => {
+  //   getData.then((res) => {
+  //     setData(res.find((product) => product.id === parseInt(detailId)));
+  //   });
+  // }
+  // const dataDetailNone = () => {
+  //   getData.then((res) => {
+  //     setData(res);
+  //   });
+  // }
+
+  // useEffect(() => {
+  //   getData;
+  //   detailId ? dataDetailId() : dataDetailNone() 
+  // }, [detailId]);
 
   useEffect(() => {
-    getData;
-    detailId ? dataDetailId() : dataDetailNone() 
-  }, [detailId]);
+    const querydb = getFirestore();
+    const queryDoc = doc(querydb, 'products', 'DVlQk9UKTQheRYeggaX9');
+    getDoc(queryDoc)
+    .then((doc)=> setData({id: doc.id, ...doc.data()}))
+    .catch((error) => console.error('Error al obtener el documento', error))
+  }, []);
 
   return (
     <div className="item-detail-body"> 

@@ -38,7 +38,7 @@ const ItemDetailContainer = () => {
     const querydb = getFirestore();
     const queryDoc = doc(querydb, 'products', 'DVlQk9UKTQheRYeggaX9');
     getDoc(queryDoc)
-    .then((doc)=> setData({id: doc.id, ...doc.data()}))
+    .then((res)=> setData({id: res.id, ...res.data()}))
     .catch((error) => console.error('Error al obtener el documento', error))
   }, []);
 

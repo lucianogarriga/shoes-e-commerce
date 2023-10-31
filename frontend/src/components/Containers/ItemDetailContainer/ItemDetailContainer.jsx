@@ -10,42 +10,21 @@ const ItemDetailContainer = () => {
   const [data, setData] = useState({});
   // Para guardar 1 objeto, justamente inicializamos el estado como un objeto vacio. 
   const { detailId } = useParams();
-
-  // const getData = new Promise((resolve) => {
-  //   setTimeout(() => { 
-  //     // Al resolverse, debe traer el objeto
-  //     resolve(productos);
-  //   }, 1000);
-  // }); 
-  
-  // const dataDetailId = () => {
-  //   getData.then((res) => {
-  //     setData(res.find((product) => product.id === parseInt(detailId)));
-  //   });
-  // }
-  // const dataDetailNone = () => {
-  //   getData.then((res) => {
-  //     setData(res);
-  //   });
-  // }
-
-  // useEffect(() => {
-  //   getData;
-  //   detailId ? dataDetailId() : dataDetailNone() 
-  // }, [detailId]);
-
-  useEffect(() => {
+ 
+  const obtainData = () => {
     const querydb = getFirestore();
-    const queryDoc = doc(querydb, 'products', 'DVlQk9UKTQheRYeggaX9');
+    const queryDoc = doc(querydb, 'products', detailId);
     getDoc(queryDoc)
     .then((res)=> setData({id: res.id, ...res.data()}))
     .catch((error) => console.error('Error al obtener el documento', error))
-  }, []);
+  }
+
+  useEffect(() => {
+    obtainData();
+  }, [detailId]);
 
   return (
-    <div className="item-detail-body"> 
-      {/* Tomamos la data del objeto guardado en el estado,
-     y lo pasamos al ItemDetail */}
+    <div className="item-detail-body">  
       <ItemDetail data={data} />
     </div>
   );
